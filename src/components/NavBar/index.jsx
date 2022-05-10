@@ -1,5 +1,5 @@
-import React from "react";
-import CartLogo from "./assets/images/Cart.svg";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Audiophile from "./assets/images/Audiophile-Logo.svg";
 
 import {
@@ -11,23 +11,38 @@ import {
   NavItem,
   NavCart,
   Cart,
+  Hamburger,
+  Times,
+  Bars,
 } from "./NavBar.js";
 
 const Navbar = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked((prev) => !prev);
+    console.log(clicked);
+  };
+
   return (
     <NavContainer>
+      <Hamburger onClick={handleClick}>
+        {clicked ? <Times /> : <Bars />}
+      </Hamburger>
       <NavLogo>
-        <Logo src={Audiophile} alt="audiophile" />
+        <Link to="/">
+          <Logo src={Audiophile} alt="audiophile" />
+        </Link>
       </NavLogo>
       <NavItems>
-        <NavTextItems>
+        <NavTextItems className={clicked ? "active" : null}>
           <NavItem to="/">Home</NavItem>
           <NavItem to="/">Headphones</NavItem>
           <NavItem to="/">Speakers</NavItem>
           <NavItem to="/">Headphones</NavItem>
         </NavTextItems>
         <NavCart>
-          <Cart src={CartLogo} alt="cart" />
+          <Cart />
         </NavCart>
       </NavItems>
     </NavContainer>
