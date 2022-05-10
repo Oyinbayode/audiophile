@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const NavContainer = styled.div`
-  background: #141414;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
