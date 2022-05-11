@@ -11,6 +11,7 @@ import {
   HeroHeadphoneImage,
 } from "./HomeHero";
 import XX91 from "./assets/images/XX91.svg";
+import Button from "../../utilities/Button";
 
 const HomeHero = () => {
   return (
@@ -24,6 +25,7 @@ const HomeHero = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </HeroText>
+          <Button to="/">See product</Button>
         </HeroLeft>
         <HeroRight>
           <HeroHeadphoneImage src={XX91} alt="XX91 headphone" />

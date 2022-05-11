@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const HeroContainer = styled.div`
   margin-left: 10vw;
@@ -30,6 +30,10 @@ export const HeroMain = styled.div`
   @media screen and (max-width: 450px) {
     margin-top: 65px;
   }
+
+  @media screen and (min-width: 460px) and (max-width: 560px) {
+    margin-top: 70px;
+  }
 `;
 
 export const HeroParagraph = styled.p`
@@ -52,6 +56,9 @@ export const HeroHeader = styled.h1`
   max-width: 396px;
   width: 100%;
   color: white;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 10px;
 
   @media screen and (max-width: 450px) {
     font-size: 36px;
@@ -62,6 +69,10 @@ export const HeroHeader = styled.h1`
 `;
 
 export const HeroLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
