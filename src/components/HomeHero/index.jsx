@@ -10,6 +10,7 @@ import {
   HeroRight,
   HeroHeadphoneImage,
 } from "./HomeHero";
+import XX91 from "./assets/images/XX91.svg";
 
 const HomeHero = () => {
   return (
@@ -25,7 +26,7 @@ const HomeHero = () => {
           </HeroText>
         </HeroLeft>
         <HeroRight>
-          <HeroHeadphoneImage />
+          <HeroHeadphoneImage src={XX91} alt="XX91 headphone" />
         </HeroRight>
       </HeroMain>
     </HeroContainer>

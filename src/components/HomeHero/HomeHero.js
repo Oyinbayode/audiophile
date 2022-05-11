@@ -1,19 +1,117 @@
 import styled from "styled-components";
 
-export const HeroContainer = styled.div``;
+export const HeroContainer = styled.div`
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  max-height: 632px;
+  height: 100%;
+`;
 
-export const HorizontalLine = styled.hr``;
+export const HorizontalLine = styled.hr`
+  border-top: 0.5px solid #fff;
+  opacity: 0.2;
+  width: 100%;
+`;
 
-export const HeroMain = styled.div``;
+export const HeroMain = styled.div`
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
 
-export const HeroParagraph = styled.p``;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 126px;
+  }
 
-export const HeroHeader = styled.h1``;
+  @media screen and (max-width: 450px) {
+    margin-top: 65px;
+  }
+`;
 
-export const HeroLeft = styled.div``;
+export const HeroParagraph = styled.p`
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.5;
+`;
+
+export const HeroHeader = styled.h1`
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  max-width: 396px;
+  width: 100%;
+  color: white;
+
+  @media screen and (max-width: 450px) {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.28571px;
+    max-width: 328px;
+  }
+`;
+
+export const HeroLeft = styled.div`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 290px;
+  }
+`;
 
 export const HeroRight = styled.div``;
 
-export const HeroText = styled.p``;
+export const HeroText = styled.p`
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #fff;
+  opacity: 0.75;
+  mix-blend-mode: normal;
+  max-width: 349px;
+  width: 100%;
 
-export const HeroHeadphoneImage = styled.img``;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const HeroHeadphoneImage = styled.img`
+  position: absolute;
+  top: 0;
+  right: 10vw;
+  z-index: -99;
+  max-width: 708.8px;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    top: 0;
+    left: 0;
+    right: auto;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 450px) {
+    top: 10vh;
+    left: 0;
+    right: auto;
+    transform: scale(1.45);
+  }
+`;
