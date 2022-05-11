@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: #141414;
     font-family: 'Manrope', sans-serif;
   }
 `;
