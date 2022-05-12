@@ -1,0 +1,19 @@
+{
+  "dataBody": [
+    {
+      "image": "/images/headphones.svg",
+      "title": "headphones",
+      "id": 1
+    },
+    {
+      "image": "/images/Speakers.svg",
+      "title": "speakers",
+      "id": 2
+    },
+    {
+      "image": "/images/Earphones.svg",
+      "title": "earphones",
+      "id": 3
+    }
+  ]
+}
