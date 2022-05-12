@@ -5,8 +5,7 @@ export const HeroContainer = styled.div`
   margin-right: 10vw;
   display: flex;
   flex-direction: column;
-  max-height: 632px;
-  height: 100%;
+  margin-bottom: 10.5rem;
 `;
 
 export const HorizontalLine = styled.hr`
