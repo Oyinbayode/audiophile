@@ -8,7 +8,9 @@ const Button = (props) => {
   };
   return (
     <BtnLink to={props.to}>
-      <DefaultButton onClick={handleClick}>{props.children}</DefaultButton>
+      <DefaultButton black={props.black} onClick={handleClick}>
+        {props.children}
+      </DefaultButton>
     </BtnLink>
   );
 };
@@ -37,7 +39,16 @@ const DefaultButton = styled.button`
     cursor: pointer;
   }
 
-  ${(props) => props.primary && css``}
+  ${(props) =>
+    props.black &&
+    css`
+      background: #000;
+      color: white;
+
+      &:hover {
+        background: #4c4c4c;
+      }
+    `}
 `;
 
 export default Button;
