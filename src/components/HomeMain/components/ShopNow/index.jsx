@@ -6,6 +6,7 @@ import {
   CardTitle,
   CardBtnLink,
   CardImageDiv,
+  RightArrow,
 } from "./ShopNow";
 import CardsData from "./Cards.json";
 
@@ -20,7 +21,10 @@ const ShopNow = () => {
             <CardImage src={`${item.image}`} />
           </CardImageDiv>
           <CardTitle>{item.title}</CardTitle>
-          <CardBtnLink to="/">shop now</CardBtnLink>
+          <CardBtnLink to="/">
+            <p>shop</p>
+            <RightArrow />
+          </CardBtnLink>
         </Card>
       ))}
     </ShopNowContainer>
