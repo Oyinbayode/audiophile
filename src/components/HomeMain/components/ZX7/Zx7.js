@@ -39,8 +39,6 @@ export const ZX7Frame = styled.div`
   }
 `;
 
-export const ZX7Body = styled.div``;
-
 export const ZX7Header = styled.h1`
   margin: 0;
   font-weight: 700;
@@ -50,7 +48,3 @@ export const ZX7Header = styled.h1`
   text-transform: uppercase;
   margin-bottom: 22px;
 `;
-
-export const ZX7Image = styled.div``;
-
-export const ZX7Img = styled.img``;
