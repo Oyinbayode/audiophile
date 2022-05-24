@@ -1,5 +1,5 @@
 import React from "react";
-import { ShopNow, ZX9 } from "./components";
+import { ShopNow, ZX7, ZX9 } from "./components";
 import { Div } from "./HomeMain";
 
 const HomeMain = () => {
@@ -7,6 +7,7 @@ const HomeMain = () => {
     <Div>
       <ShopNow />
       <ZX9 />
+      <ZX7 />
     </Div>
   );
 };

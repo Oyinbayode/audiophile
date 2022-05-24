@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const Zx9Container = styled.div`
   border-radius: 8px;
