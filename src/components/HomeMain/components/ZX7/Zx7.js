@@ -10,6 +10,7 @@ export const ZX7Container = styled.div`
   background-size: auto auto;
   border-radius: 8px;
   background-repeat: no-repeat;
+  margin-bottom: 48px;
 
   @media screen and (max-width: 1090px) {
     background-image: url("./images/zx7-tablet.svg");
