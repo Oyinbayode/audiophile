@@ -8,7 +8,11 @@ const Button = (props) => {
   };
   return (
     <BtnLink to={props.to}>
-      <DefaultButton black={props.black} onClick={handleClick}>
+      <DefaultButton
+        transparent={props.transparent}
+        black={props.black}
+        onClick={handleClick}
+      >
         {props.children}
       </DefaultButton>
     </BtnLink>
@@ -47,6 +51,19 @@ const DefaultButton = styled.button`
 
       &:hover {
         background: #4c4c4c;
+      }
+    `}
+
+  ${(props) =>
+    props.transparent &&
+    css`
+      background: transparent;
+      border: 1px solid black;
+      color: black;
+
+      &:hover {
+        background: black;
+        color: white;
       }
     `}
 `;

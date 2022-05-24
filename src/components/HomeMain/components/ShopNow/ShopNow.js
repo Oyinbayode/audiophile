@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { RiArrowRightSLine } from "react-icons/ri";
 
 export const ShopNowContainer = styled.div`
