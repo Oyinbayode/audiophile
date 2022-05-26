@@ -3,15 +3,12 @@ import styled, { css } from "styled-components/macro";
 import { Link } from "react-router-dom";
 
 const Button = (props) => {
-  const handleClick = () => {
-    console.log(props);
-  };
   return (
     <BtnLink to={props.to}>
       <DefaultButton
+        onClick={props.onClick}
         transparent={props.transparent}
         black={props.black}
-        onClick={handleClick}
       >
         {props.children}
       </DefaultButton>
