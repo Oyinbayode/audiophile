@@ -16,7 +16,7 @@ export const YX1Container = styled.div`
 
   @media screen and (max-width: 600px) {
     max-width: 85vw;
-    margin-bottom: 50vh;
+    margin-bottom: 45vh;
   }
 `;
 

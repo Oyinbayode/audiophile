@@ -16,12 +16,14 @@ export const ZX7Container = styled.div`
     background-image: url("./images/zx7-tablet.svg");
     background-size: contain;
     max-width: 689px;
+    margin-bottom: 32px;
   }
 
   @media screen and (max-width: 600px) {
     background-image: url("./images/zx7-mobile.svg");
     background-size: cover;
     max-width: 85vw;
+    margin-bottom: 24px;
   }
 `;
 

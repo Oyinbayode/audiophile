@@ -13,26 +13,22 @@ export const Zx9Container = styled.div`
   margin-right: 7vw;
   /* background-attachment: fixed; */
 
-  margin-bottom: 100px;
+  margin-bottom: 48px;
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 1090px) {
-    /* max-width: fit-content; */
-    /* margin-left: 1vw;
-    margin-right: 1vw; */
-  }
 
   @media screen and (max-width: 1090px) {
     background-image: url("./images/mobile-oval-bg.svg");
     background-size: contain;
     max-width: 689px;
+    margin-bottom: 32px;
   }
 
   @media screen and (max-width: 600px) {
     background-image: url("./images/iphone-bg.svg");
     background-size: contain;
     max-width: fit-content;
+    margin-bottom: 24px;
   }
 `;
 
