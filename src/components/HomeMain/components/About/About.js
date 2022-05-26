@@ -6,6 +6,7 @@ export const AboutContainer = styled.div`
   align-items: center;
   max-width: 1110px;
   width: 100%;
+  margin-bottom: 200px;
 
   @media screen and (max-width: 1090px) {
     max-width: 689px;
