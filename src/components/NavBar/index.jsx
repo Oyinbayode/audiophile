@@ -39,7 +39,7 @@ const Navbar = () => {
           <NavItem to="/">Home</NavItem>
           <NavItem to="/">Headphones</NavItem>
           <NavItem to="/">Speakers</NavItem>
-          <NavItem to="/">Headphones</NavItem>
+          <NavItem to="/">Earphones</NavItem>
         </NavTextItems>
         <NavCart>
           <Cart />
