@@ -122,6 +122,5 @@ export const HeroHeadphoneImage = styled.img`
     top: 10vh;
     left: 0;
     right: auto;
-    transform: scale(1.1);
   }
 `;
