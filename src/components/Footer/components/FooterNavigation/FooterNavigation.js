@@ -11,8 +11,6 @@ export const FooterNav = styled.div`
   margin-left: 11.46vw;
   margin-right: 11.46vw;
 
-  border: 1px solid white;
-
   @media screen and (max-width: 1090px) {
     flex-direction: column;
     align-items: flex-start;
@@ -42,7 +40,6 @@ export const FooterNavItems = styled.ul`
   justify-content: space-between;
   max-width: 429px;
   width: 100%;
-  border: 1px solid white;
 
   @media screen and (max-width: 1090px) {
     margin: 0;
