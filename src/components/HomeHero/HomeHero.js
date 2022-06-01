@@ -119,9 +119,8 @@ export const HeroHeadphoneImage = styled.img`
   }
 
   @media screen and (max-width: 450px) {
-    top: 10vh;
+    top: 5vh;
     left: 0;
     right: auto;
-    transform: scale(1.1);
   }
 `;
