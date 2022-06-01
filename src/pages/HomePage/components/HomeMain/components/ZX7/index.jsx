@@ -1,6 +1,6 @@
 import React from "react";
 import { ZX7Container, ZX7Frame, ZX7Header } from "./Zx7";
-import Button from "../../../../utilities/Button";
+import Button from "../../../../../../utilities/Button";
 
 const ZX7 = () => {
   return (
