@@ -6,7 +6,6 @@ export const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 10.5rem;
-  overflow-x: hidden;
 `;
 
 export const HorizontalLine = styled.hr`
