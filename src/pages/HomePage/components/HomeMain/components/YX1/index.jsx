@@ -8,7 +8,7 @@ import {
   YX1Header,
   YX1Text,
 } from "./YX1";
-import Button from "../../../../utilities/Button";
+import Button from "../../../../../../utilities/Button";
 import YX1Pic from "./assets/images/YX1 Earphones.svg";
 
 const YX1 = () => {

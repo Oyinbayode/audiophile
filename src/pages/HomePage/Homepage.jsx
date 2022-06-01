@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import HomeHero from "../components/HomeHero";
-import HomeMain from "../components/HomeMain";
+import { HomeHero, HomeMain } from "./components";
 
 const Homepage = () => {
   return (
