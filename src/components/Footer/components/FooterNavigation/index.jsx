@@ -7,13 +7,14 @@ import {
   FooterNavItems,
   FooterNavItem,
 } from "./FooterNavigation.js";
+import Logo from "../../assets/images/Audiophile-Logo.svg";
 
 const FooterNavigation = () => {
   return (
     <FooterNav>
       <FooterNavLogo>
         <Link to="/">
-          <FooterLogo src="" alt="audiophile" />
+          <FooterLogo src={Logo} alt="audiophile" />
         </Link>
       </FooterNavLogo>
       <FooterNavItems>
