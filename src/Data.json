@@ -1,0 +1,81 @@
+{
+  "ProductData": [
+    {
+      "id": 1,
+      "new": true,
+      "name": "XX99 MARK II Headphones",
+      "slugName": "xx99-mark-ii",
+      "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
+      "price": 2999,
+      "images": {
+        "mobile": "/public/images/XX99-2-Headphones/ProductDetails/xx99-mobile-productDetails.svg",
+        "tablet": "/public/images/XX99-2-Headphones/ProductDetails/xx99-tablet-productDetails.svg",
+        "desktop": "/public/images/XX99-2-Headphones/ProductDetails/xx99-desktop-productDetails.svg"
+      },
+      "features": [
+        "Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.",
+        "The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic."
+      ],
+      "boxItem": [
+        {
+          "itemName": "Headphone Unit",
+          "qty": 1
+        },
+        {
+          "itemName": "Replacement Earcups",
+          "qty": 2
+        },
+        {
+          "itemName": "User Manual",
+          "qty": 1
+        },
+        {
+          "itemName": "3.5mm 5m Audio Cable",
+          "qty": 1
+        },
+        {
+          "itemName": "Travel Bag",
+          "qty": 1
+        }
+      ],
+      "Category": "Headphones",
+      "Gallery": {
+        "One": {
+          "Mobile": "",
+          "Tablet": "",
+          "Desktop": ""
+        },
+        "Two": {
+          "Mobile": "",
+          "Tablet": "",
+          "Desktop": ""
+        },
+        "Three": {
+          "Mobile": "",
+          "Tablet": "",
+          "Desktop": ""
+        }
+      },
+      "others": [
+        {
+          "id": 2,
+          "images": {},
+          "name": "XX99 MARK I Headphones",
+          "slugName": "xx99-mark-i"
+        },
+        {
+          "id": 3,
+          "images": {},
+          "name": "XX59 Headphones",
+          "slugName": "xx59"
+        },
+        {
+          "id": 4,
+          "images": {},
+          "name": "ZX9 Speakers",
+          "slugName": "zx9"
+        }
+      ]
+    }
+  ]
+}
