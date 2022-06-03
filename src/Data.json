@@ -1,0 +1,278 @@
+{
+  "ProductData": [
+    {
+      "id": 1,
+      "new": true,
+      "name": "XX99 MARK II Headphones",
+      "slugName": "xx99-mark-ii",
+      "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
+      "price": 2999,
+      "images": {
+        "mobile": "/public/images/XX99-2-Headphones/ProductDetails/xx99-mobile-productDetails.svg",
+        "tablet": "/public/images/XX99-2-Headphones/ProductDetails/xx99-tablet-productDetails.svg",
+        "desktop": "/public/images/XX99-2-Headphones/ProductDetails/xx99-desktop-productDetails.svg"
+      },
+      "features": [
+        "Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.",
+        "The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic."
+      ],
+      "boxItem": [
+        {
+          "itemName": "Headphone Unit",
+          "qty": 1
+        },
+        {
+          "itemName": "Replacement Earcups",
+          "qty": 2
+        },
+        {
+          "itemName": "User Manual",
+          "qty": 1
+        },
+        {
+          "itemName": "3.5mm 5m Audio Cable",
+          "qty": 1
+        },
+        {
+          "itemName": "Travel Bag",
+          "qty": 1
+        }
+      ],
+      "Category": "Headphones",
+      "CategoryImage": {
+        "Mobile": "/public/images/XX99-2-Headphones/xx99-mobile-category.svg",
+        "Tablet": "/public/images/XX99-2-Headphones/xx99-tablet-category.svg",
+        "Desktop": "/public/images/XX99-2-Headphones/xx99-desktop-category.svg"
+      },
+      "Gallery": {
+        "One": {
+          "Mobile": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-1-mobile.svg",
+          "Tablet": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-1-tablet.svg",
+          "Desktop": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-1-desktop.svg"
+        },
+        "Two": {
+          "Mobile": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-2-mobile.svg",
+          "Tablet": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-2-tablet.svg",
+          "Desktop": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-2-desktop.svg"
+        },
+        "Three": {
+          "Mobile": "/public/images/XX99-2-Headphones/Gallery/xx99-lg-3-mobile.svg",
+          "Tablet": "/public/images/XX99-2-Headphones/Gallery/xx99-lg-3-tablet.svg",
+          "Desktop": "/public/images/XX99-2-Headphones/Gallery/xx99-lg-3-desktop.svg"
+        }
+      },
+      "others": [
+        {
+          "id": 2,
+          "images": {
+            "mobile": "/public/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "tablet": "/public/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
+            "desktop": "/public/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+          },
+          "name": "XX99 MARK I Headphones",
+          "slugName": "xx99-mark-i"
+        },
+        {
+          "id": 3,
+          "images": {
+            "mobile": "/public/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "tablet": "/public/images/XX59-Headphones/Others/xx59-tablet.svg",
+            "desktop": "/public/images/XX59-Headphones/Others/xx59-desktop.svg"
+          },
+          "name": "XX59 Headphones",
+          "slugName": "xx59"
+        },
+        {
+          "id": 4,
+          "images": {
+            "mobile": "/public/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "tablet": "/public/images/ZX9-Speakers/Others/zx9-tablet.svg",
+            "desktop": "/public/images/ZX9-Speakers/Others/zx9-desktop.svg"
+          },
+          "name": "ZX9 Speakers",
+          "slugName": "zx9"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "new": false,
+      "name": "XX99 MARK I Headphones",
+      "slugName": "xx99-mark-i",
+      "description": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go. ",
+      "price": 1750,
+      "images": {
+        "mobile": "/public/images/XX99-1-Headphones/ProductDetails/xx99-1-mobile-productDetails.svg",
+        "tablet": "/public/images/XX99-1-Headphones/ProductDetails/xx99-1-tablet-productDetails.svg",
+        "desktop": "/public/images/XX99-1-Headphones/ProductDetails/xx99-1-desktop-productDetails.svg"
+      },
+      "features": [
+        "As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.",
+        "From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is included with a balanced gold connector."
+      ],
+      "boxItem": [
+        {
+          "itemName": "Headphone Unit",
+          "qty": 1
+        },
+        {
+          "itemName": "Replacement Earcups",
+          "qty": 2
+        },
+        {
+          "itemName": "User Manual",
+          "qty": 1
+        },
+        {
+          "itemName": "3.5mm 5m Audio Cable",
+          "qty": 1
+        }
+      ],
+      "Category": "Headphones",
+      "CategoryImage": {
+        "Mobile": "/public/images/XX99-1-Headphones/xx99-1-mobile-category.svg",
+        "Tablet": "/public/images/XX99-1-Headphones/xx99-1-tablet-category.svg",
+        "Desktop": "/public/images/XX99-1-Headphones/xx99-1-desktop-category.svg"
+      },
+      "Gallery": {
+        "One": {
+          "Mobile": "/public/images/XX99-1-Headphones/Gallery/xx99-1-sm-1-mobile.svg",
+          "Tablet": "/public/images/XX99-1-Headphones/Gallery/xx99-1-sm-1-tablet.svg",
+          "Desktop": "/public/images/XX99-1-Headphones/Gallery/xx99-1-sm-1-desktop.svg"
+        },
+        "Two": {
+          "Mobile": "/public/images/XX99-1-Headphones/Gallery/xx99-1-sm-2-mobile.svg",
+          "Tablet": "/public/images/XX99-1-Headphones/Gallery/xx99-1-sm-2-tablet.svg",
+          "Desktop": "/public/images/XX99-1-Headphones/Gallery/xx99-1-sm-2-desktop.svg"
+        },
+        "Three": {
+          "Mobile": "/public/images/XX99-1-Headphones/Gallery/xx99-1-lg-3-mobile.svg",
+          "Tablet": "/public/images/XX99-1-Headphones/Gallery/xx99-1-lg-3-tablet.svg",
+          "Desktop": "/public/images/XX99-1-Headphones/Gallery/xx99-1-lg-3-tablet.svg"
+        }
+      },
+      "others": [
+        {
+          "id": 1,
+          "images": {
+            "mobile": "/public/images/XX99-2-Headphones/Others/xx99-mobile.svg",
+            "tablet": "/public/images/XX99-2-Headphones/Others/xx99-tablet.svg",
+            "desktop": "/public/images/XX99-2-Headphones/Others/xx99-desktop.svg"
+          },
+          "name": "XX99 MARK II Headphones",
+          "slugName": "xx99-mark-ii"
+        },
+        {
+          "id": 3,
+          "images": {
+            "mobile": "/public/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "tablet": "/public/images/XX59-Headphones/Others/xx59-tablet.svg",
+            "desktop": "/public/images/XX59-Headphones/Others/xx59-desktop.svg"
+          },
+          "name": "XX59 Headphones",
+          "slugName": "xx59"
+        },
+        {
+          "id": 4,
+          "images": {
+            "mobile": "/public/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "tablet": "/public/images/ZX9-Speakers/Others/zx9-tablet.svg",
+            "desktop": "/public/images/ZX9-Speakers/Others/zx9-desktop.svg"
+          },
+          "name": "ZX9 Speakers",
+          "slugName": "zx9"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "new": false,
+      "name": "XX59 Headphones",
+      "slugName": "xx59",
+      "description": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
+      "price": 899,
+      "images": {
+        "mobile": "/public/images/XX59-Headphones/ProductDetails/xx59-mobile-productDetails.svg",
+        "tablet": "/public/images/XX59-Headphones/ProductDetails/xx59-tablet-productDetails.svg",
+        "desktop": "/public/images/XX59-Headphones/ProductDetails/xx59-desktop-productDetails.svg"
+      },
+      "features": [
+        "These headphones have been created from durable, high-quality materials tough enough to take anywhere. Its compact folding design fuses comfort and minimalist style making it perfect for travel. Flawless transmission is assured by the latest wireless technology engineered for audio synchronization with videos.",
+        "More than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C."
+      ],
+      "boxItem": [
+        {
+          "itemName": "Headphone Unit",
+          "qty": 1
+        },
+        {
+          "itemName": "Replacement Earcups",
+          "qty": 2
+        },
+        {
+          "itemName": "User Manual",
+          "qty": 1
+        },
+        {
+          "itemName": "3.5mm 5m Audio Cable",
+          "qty": 1
+        }
+      ],
+      "Category": "Headphones",
+      "CategoryImage": {
+        "Mobile": "/public/images/XX59-Headphones/xx59-mobile-category.svg",
+        "Tablet": "/public/images/XX59-Headphones/xx59-tablet-category.svg",
+        "Desktop": "/public/images/XX59-Headphones/xx59-desktop-category.svg"
+      },
+      "Gallery": {
+        "One": {
+          "Mobile": "/public/images/XX59-Headphones/Gallery/xx59-sm-1-mobile.svg",
+          "Tablet": "/public/images/XX59-Headphones/Gallery/xx59-sm-1-tablet.svg",
+          "Desktop": "/public/images/XX59-Headphones/Gallery/xx59-sm-1-desktop.svg"
+        },
+        "Two": {
+          "Mobile": "/public/images/XX59-Headphones/Gallery/xx59-sm-2-mobile.svg",
+          "Tablet": "/public/images/XX59-Headphones/Gallery/xx59-sm-2-tablet.svg",
+          "Desktop": "/public/images/XX59-Headphones/Gallery/xx59-sm-2-desktop.svg"
+        },
+        "Three": {
+          "Mobile": "/public/images/XX59-Headphones/Gallery/xx59-lg-3-mobile.svg",
+          "Tablet": "/public/images/XX59-Headphones/Gallery/xx59-lg-3-tablet.svg",
+          "Desktop": "/public/images/XX59-Headphones/Gallery/xx59-lg-3-desktop.svg"
+        }
+      },
+      "others": [
+        {
+          "id": 1,
+          "images": {
+            "mobile": "/public/images/XX99-2-Headphones/Others/xx99-mobile.svg",
+            "tablet": "/public/images/XX99-2-Headphones/Others/xx99-tablet.svg",
+            "desktop": "/public/images/XX99-2-Headphones/Others/xx99-desktop.svg"
+          },
+          "name": "XX99 MARK II Headphones",
+          "slugName": "xx99-mark-ii"
+        },
+        {
+          "id": 2,
+          "images": {
+            "mobile": "/public/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "tablet": "/public/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
+            "desktop": "/public/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+          },
+          "name": "XX99 MARK I Headphones",
+          "slugName": "xx99-mark-i"
+        },
+        {
+          "id": 4,
+          "images": {
+            "mobile": "/public/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "tablet": "/public/images/ZX9-Speakers/Others/zx9-tablet.svg",
+            "desktop": "/public/images/ZX9-Speakers/Others/zx9-desktop.svg"
+          },
+          "name": "ZX9 Speakers",
+          "slugName": "zx9"
+        }
+      ]
+    }
+  ]
+}
