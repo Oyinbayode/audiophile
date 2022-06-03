@@ -39,6 +39,11 @@
         }
       ],
       "Category": "Headphones",
+      "CategoryImage": {
+        "Mobile": "",
+        "Tablet": "",
+        "Desktop": ""
+      },
       "Gallery": {
         "One": {
           "Mobile": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-1-mobile.svg",
@@ -59,19 +64,31 @@
       "others": [
         {
           "id": 2,
-          "images": {},
+          "images": {
+            "mobile": "/public/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "tablet": "/public/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
+            "desktop": "/public/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+          },
           "name": "XX99 MARK I Headphones",
           "slugName": "xx99-mark-i"
         },
         {
           "id": 3,
-          "images": {},
+          "images": {
+            "mobile": "/public/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "tablet": "/public/images/XX59-Headphones/Others/xx59-tablet.svg",
+            "desktop": "/public/images/XX59-Headphones/Others/xx59-desktop.svg"
+          },
           "name": "XX59 Headphones",
           "slugName": "xx59"
         },
         {
           "id": 4,
-          "images": {},
+          "images": {
+            "mobile": "/public/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "tablet": "/public/images/ZX9-Speakers/Others/zx9-tablet.svg",
+            "desktop": "/public/images/ZX9-Speakers/Others/zx9-desktop.svg"
+          },
           "name": "ZX9 Speakers",
           "slugName": "zx9"
         }
