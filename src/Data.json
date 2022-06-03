@@ -41,18 +41,18 @@
       "Category": "Headphones",
       "Gallery": {
         "One": {
-          "Mobile": "",
-          "Tablet": "",
+          "Mobile": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-1-mobile.svg",
+          "Tablet": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-1-tablet.svg",
           "Desktop": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-1-desktop.svg"
         },
         "Two": {
-          "Mobile": "",
-          "Tablet": "",
+          "Mobile": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-2-mobile.svg",
+          "Tablet": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-2-tablet.svg",
           "Desktop": "/public/images/XX99-2-Headphones/Gallery/xx99-sm-2-desktop.svg"
         },
         "Three": {
-          "Mobile": "",
-          "Tablet": "",
+          "Mobile": "/public/images/XX99-2-Headphones/Gallery/xx99-lg-3-mobile.svg",
+          "Tablet": "/public/images/XX99-2-Headphones/Gallery/xx99-lg-3-tablet.svg",
           "Desktop": "/public/images/XX99-2-Headphones/Gallery/xx99-lg-3-desktop.svg"
         }
       },
