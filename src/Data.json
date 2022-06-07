@@ -69,7 +69,7 @@
             "tablet": "/public/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
             "desktop": "/public/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
           },
-          "name": "XX99 MARK I Headphones",
+          "name": "XX99 MARK I",
           "slugName": "xx99-mark-i"
         },
         {
@@ -79,7 +79,7 @@
             "tablet": "/public/images/XX59-Headphones/Others/xx59-tablet.svg",
             "desktop": "/public/images/XX59-Headphones/Others/xx59-desktop.svg"
           },
-          "name": "XX59 Headphones",
+          "name": "XX59",
           "slugName": "xx59"
         },
         {
@@ -159,7 +159,7 @@
             "tablet": "/public/images/XX99-2-Headphones/Others/xx99-tablet.svg",
             "desktop": "/public/images/XX99-2-Headphones/Others/xx99-desktop.svg"
           },
-          "name": "XX99 MARK II Headphones",
+          "name": "XX99 MARK II",
           "slugName": "xx99-mark-ii"
         },
         {
@@ -169,7 +169,7 @@
             "tablet": "/public/images/XX59-Headphones/Others/xx59-tablet.svg",
             "desktop": "/public/images/XX59-Headphones/Others/xx59-desktop.svg"
           },
-          "name": "XX59 Headphones",
+          "name": "XX59",
           "slugName": "xx59"
         },
         {
@@ -179,7 +179,7 @@
             "tablet": "/public/images/ZX9-Speakers/Others/zx9-tablet.svg",
             "desktop": "/public/images/ZX9-Speakers/Others/zx9-desktop.svg"
           },
-          "name": "ZX9 Speakers",
+          "name": "ZX9 Speaker",
           "slugName": "zx9"
         }
       ]
@@ -249,7 +249,7 @@
             "tablet": "/public/images/XX99-2-Headphones/Others/xx99-tablet.svg",
             "desktop": "/public/images/XX99-2-Headphones/Others/xx99-desktop.svg"
           },
-          "name": "XX99 MARK II Headphones",
+          "name": "XX99 MARK II",
           "slugName": "xx99-mark-ii"
         },
         {
@@ -259,7 +259,7 @@
             "tablet": "/public/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
             "desktop": "/public/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
           },
-          "name": "XX99 MARK I Headphones",
+          "name": "XX99 MARK I",
           "slugName": "xx99-mark-i"
         },
         {
@@ -269,7 +269,289 @@
             "tablet": "/public/images/ZX9-Speakers/Others/zx9-tablet.svg",
             "desktop": "/public/images/ZX9-Speakers/Others/zx9-desktop.svg"
           },
-          "name": "ZX9 Speakers",
+          "name": "ZX9 Speaker",
+          "slugName": "zx9"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "new": true,
+      "name": "ZX9 Speaker",
+      "slugName": "zx9",
+      "description": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
+      "price": 4500,
+      "images": {
+        "mobile": "/public/images/ZX9-Speakers/ProductDetails/zx9-mobile-productDetails.svg",
+        "tablet": "/public/images/ZX9-Speakers/ProductDetails/zx9-tablet-productDetails.svg",
+        "desktop": "/public/images/ZX9-Speakers/ProductDetails/zx9-desktop-productDetails.svg"
+      },
+      "features": [
+        "Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).",
+        "Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms."
+      ],
+      "boxItem": [
+        {
+          "itemName": "Speaker Unit",
+          "qty": 2
+        },
+        {
+          "itemName": "Speaker Cloth Panel",
+          "qty": 2
+        },
+        {
+          "itemName": "User Manual",
+          "qty": 1
+        },
+        {
+          "itemName": "3.5mm 10m Audio Cable",
+          "qty": 1
+        },
+        {
+          "itemName": "10m Optical Cable",
+          "qty": 1
+        }
+      ],
+      "Category": "Speakers",
+      "CategoryImage": {
+        "Mobile": "/public/images/ZX9-Speakers/zx9-mobile-category.svg",
+        "Tablet": "/public/images/ZX9-Speakers/zx9-tablet-category.svg",
+        "Desktop": "/public/images/ZX9-Speakers/zx9-desktop-category.svg"
+      },
+      "Gallery": {
+        "One": {
+          "Mobile": "/public/images/ZX9-Speakers/Gallery/zx9-sm-1-mobile.svg",
+          "Tablet": "/public/images/ZX9-Speakers/Gallery/zx9-sm-1-tablet.svg",
+          "Desktop": "/public/images/ZX9-Speakers/Gallery/zx9-sm-1-desktop.svg"
+        },
+        "Two": {
+          "Mobile": "/public/images/ZX9-Speakers/Gallery/zx9-sm-2-mobile.svg",
+          "Tablet": "/public/images/ZX9-Speakers/Gallery/zx9-sm-2-tablet.svg",
+          "Desktop": "/public/images/ZX9-Speakers/Gallery/zx9-sm-2-desktop.svg"
+        },
+        "Three": {
+          "Mobile": "/public/images/ZX9-Speakers/Gallery/zx9-lg-3-mobile.svg",
+          "Tablet": "/public/images/ZX9-Speakers/Gallery/zx9-sm-1-tablet.svg",
+          "Desktop": "/public/images/ZX9-Speakers/Gallery/zx9-lg-3-desktop.svg"
+        }
+      },
+      "others": [
+        {
+          "id": 5,
+          "images": {
+            "mobile": "/public/images/ZX7-Speakers/Others/zx7-mobile.svg",
+            "tablet": "/public/images/ZX7-Speakers/Others/zx7-tablet.svg",
+            "desktop": "/public/images/ZX7-Speakers/Others/zx7-desktop.svg"
+          },
+          "name": "ZX7 Speaker",
+          "slugName": "zx7"
+        },
+        {
+          "id": 2,
+          "images": {
+            "mobile": "/public/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "tablet": "/public/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
+            "desktop": "/public/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+          },
+          "name": "XX99 MARK I",
+          "slugName": "xx99-mark-i"
+        },
+        {
+          "id": 3,
+          "images": {
+            "mobile": "/public/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "tablet": "/public/images/XX59-Headphones/Others/xx59-tablet.svg",
+            "desktop": "/public/images/XX59-Headphones/Others/xx59-desktop.svg"
+          },
+          "name": "XX59",
+          "slugName": "xx59"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "new": false,
+      "name": "ZX7 Speaker",
+      "slugName": "zx7",
+      "description": "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
+      "price": 3500,
+      "images": {
+        "mobile": "/public/images/ZX7-Speakers/ProductDetails/zx7-mobile-productDetails.svg",
+        "tablet": "/public/images/ZX7-Speakers/ProductDetails/zx7-tablet-productDetails.svg",
+        "desktop": "/public/images/ZX7-Speakers/ProductDetails/zx7-desktop-productDetails.svg"
+      },
+      "features": [
+        "Reap the advantages of a flat diaphragm tweeter cone. This provides a fast response rate and excellent high frequencies that lower tiered bookshelf speakers cannot provide. The woofers are made from aluminum that produces a unique and clear sound. XLR inputs allow you to connect to a mixer for more advanced usage.",
+        "The ZX7 speaker is the perfect blend of stylish design and high performance. It houses an encased MDF wooden enclosure which minimises acoustic resonance. Dual connectivity allows pairing through bluetooth or traditional optical and RCA input. Switch input sources and control volume at your finger tips with the included wireless remote. This versatile speaker is equipped to deliver an authentic listening experience."
+      ],
+      "boxItem": [
+        {
+          "itemName": "Speaker Unit",
+          "qty": 2
+        },
+        {
+          "itemName": "Speaker Cloth Panel",
+          "qty": 2
+        },
+        {
+          "itemName": "User Manual",
+          "qty": 1
+        },
+        {
+          "itemName": "3.5mm 7.5m Audio Cable",
+          "qty": 1
+        },
+        {
+          "itemName": "7.5m Optical Cable",
+          "qty": 1
+        }
+      ],
+      "Category": "Speakers",
+      "CategoryImage": {
+        "Mobile": "/public/images/ZX7-Speakers/zx7-mobile-category.svg",
+        "Tablet": "/public/images/ZX7-Speakers/zx7-tablet-category.svg",
+        "Desktop": "/public/images/ZX7-Speakers/zx7-desktop-category.svg"
+      },
+      "Gallery": {
+        "One": {
+          "Mobile": "/public/images/ZX7-Speakers/Gallery/zx7-sm-1-mobile.svg",
+          "Tablet": "/public/images/ZX7-Speakers/Gallery/zx7-sm-1-tablet.svg",
+          "Desktop": "/public/images/ZX7-Speakers/Gallery/zx7-sm-1-desktop.svg"
+        },
+        "Two": {
+          "Mobile": "/public/images/ZX7-Speakers/Gallery/zx7-sm-2-mobile.svg",
+          "Tablet": "/public/images/ZX7-Speakers/Gallery/zx7-sm-2-tablet.svg",
+          "Desktop": "/public/images/ZX7-Speakers/Gallery/zx7-sm-2-desktop.svg"
+        },
+        "Three": {
+          "Mobile": "/public/images/ZX7-Speakers/Gallery/zx7-lg-3-mobile.svg",
+          "Tablet": "/public/images/ZX7-Speakers/Gallery/zx7-lg-3-tablet.svg",
+          "Desktop": "/public/images/ZX7-Speakers/Gallery/zx7-lg-3-desktop.svg"
+        }
+      },
+      "others": [
+        {
+          "id": 4,
+          "images": {
+            "mobile": "/public/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "tablet": "/public/images/ZX9-Speakers/Others/zx9-tablet.svg",
+            "desktop": "/public/images/ZX9-Speakers/Others/zx9-desktop.svg"
+          },
+          "name": "ZX9 Speaker",
+          "slugName": "zx9"
+        },
+        {
+          "id": 2,
+          "images": {
+            "mobile": "/public/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "tablet": "/public/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
+            "desktop": "/public/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+          },
+          "name": "XX99 MARK I",
+          "slugName": "xx99-mark-i"
+        },
+        {
+          "id": 3,
+          "images": {
+            "mobile": "/public/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "tablet": "/public/images/XX59-Headphones/Others/xx59-tablet.svg",
+            "desktop": "/public/images/XX59-Headphones/Others/xx59-desktop.svg"
+          },
+          "name": "XX59",
+          "slugName": "xx59"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "new": true,
+      "name": "YX1 Wireless Earphones",
+      "slugName": "yx1",
+      "description": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
+      "price": 599,
+      "images": {
+        "mobile": "/public/images/YX1-Earphones/ProductDetails/yx1-mobile-productDetails.svg",
+        "tablet": "/public/images/YX1-Earphones/ProductDetails/yx1-tablet-productDetails.svg",
+        "desktop": "/public/images/YX1-Earphones/ProductDetails/yx1-desktop-productDetails.svg"
+      },
+      "features": [
+        "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.",
+        "The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black."
+      ],
+      "boxItem": [
+        {
+          "itemName": "Earphone Unit",
+          "qty": 2
+        },
+        {
+          "itemName": "Multi-size Earplugs",
+          "qty": 6
+        },
+        {
+          "itemName": "User Manual",
+          "qty": 1
+        },
+        {
+          "itemName": "USB-C Charging Cable",
+          "qty": 1
+        },
+        {
+          "itemName": "Travel Pouch",
+          "qty": 1
+        }
+      ],
+      "Category": "Earphones",
+      "CategoryImage": {
+        "Mobile": "/public/images/YX1-Earphones/yx1-mobile-category.svg",
+        "Tablet": "/public/images/YX1-Earphones/yx1-tablet-category.svg",
+        "Desktop": "/public/images/YX1-Earphones/yx1-desktop-category.svg"
+      },
+      "Gallery": {
+        "One": {
+          "Mobile": "/public/images/YX1-Earphones/Gallery/yx1-sm-1-mobile.svg",
+          "Tablet": "/public/images/YX1-Earphones/Gallery/yx1-sm-1-tablet.svg",
+          "Desktop": "/public/images/YX1-Earphones/Gallery/yx1-sm-1-desktop.svg"
+        },
+        "Two": {
+          "Mobile": "/public/images/YX1-Earphones/Gallery/yx1-sm-2-mobile.svg",
+          "Tablet": "/public/images/YX1-Earphones/Gallery/yx1-sm-2-tablet.svg",
+          "Desktop": "/public/images/YX1-Earphones/Gallery/yx1-sm-2-desktop.svg"
+        },
+        "Three": {
+          "Mobile": "/public/images/YX1-Earphones/Gallery/yx1-lg-3-mobile.svg",
+          "Tablet": "/public/images/YX1-Earphones/Gallery/yx1-lg-3-tablet.svg",
+          "Desktop": "/public/images/YX1-Earphones/Gallery/yx1-lg-3-desktop.svg"
+        }
+      },
+      "others": [
+        {
+          "id": 2,
+          "images": {
+            "mobile": "/public/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "tablet": "/public/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
+            "desktop": "/public/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+          },
+          "name": "XX99 MARK I",
+          "slugName": "xx99-mark-i"
+        },
+        {
+          "id": 3,
+          "images": {
+            "mobile": "/public/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "tablet": "/public/images/XX59-Headphones/Others/xx59-tablet.svg",
+            "desktop": "/public/images/XX59-Headphones/Others/xx59-desktop.svg"
+          },
+          "name": "XX59",
+          "slugName": "xx59"
+        },
+        {
+          "id": 4,
+          "images": {
+            "mobile": "/public/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "tablet": "/public/images/ZX9-Speakers/Others/zx9-tablet.svg",
+            "desktop": "/public/images/ZX9-Speakers/Others/zx9-desktop.svg"
+          },
+          "name": "ZX9 Speaker",
           "slugName": "zx9"
         }
       ]
