@@ -3,17 +3,20 @@
     {
       "image": "/images/headphones.svg",
       "title": "headphones",
-      "id": 1
+      "id": 1,
+      "to": "/categories/Headphones"
     },
     {
       "image": "/images/Speakers.svg",
       "title": "speakers",
-      "id": 2
+      "id": 2,
+      "to": "/categories/Speakers"
     },
     {
       "image": "/images/Earphones.svg",
       "title": "earphones",
-      "id": 3
+      "id": 3,
+      "to": "/categories/Earphones"
     }
   ]
 }

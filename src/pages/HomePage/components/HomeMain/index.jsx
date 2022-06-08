@@ -1,5 +1,6 @@
 import React from "react";
-import { ShopNow, ZX7, ZX9, YX1, About } from "./components";
+import { ShopNow } from "../../../../components";
+import { ZX7, ZX9, YX1, About } from "./components";
 import { Div } from "./HomeMain";
 
 const HomeMain = () => {
