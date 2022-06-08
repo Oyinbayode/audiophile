@@ -27,6 +27,8 @@ export const productsSlice = createSlice({
 
         // Add Fetched Product Data to Array
         state.ProductData = state.ProductData.concat(action.payload);
+
+        localStorage.setItem("Data", JSON.stringify(state.ProductData));
       })
       .addCase(fetchProductData.rejected, (state, action) => {
         state.status = "failed";
