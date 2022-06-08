@@ -2,30 +2,53 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const initialState = {
-  ProductData: {},
-  isLoading: false,
-  isError: false,
+  ProductData: [],
+  status: "idle",
+  error: null,
 };
 
 export const productsSlice = createSlice({
-  name: "productData",
+  name: "products",
   initialState,
   reducers: {
-    requestData: (state) => {
-      state.isLoading = true;
-      state.isError = false;
+    productAdded: {
+      reducer(state, action) {
+        state.ProductData.push(action.payload);
+      },
     },
+  },
+  extraReducers(builder) {
+    builder
+      .addCase(fetchProductData.pending, (state, action) => {
+        state.status = "loading";
+      })
+      .addCase(fetchProductData.fulfilled, (state, action) => {
+        state.status = "succeeded";
+
+        // Add Fetched Product Data to Array
+        state.ProductData = state.ProductData.concat(action.payload);
+      })
+      .addCase(fetchProductData.rejected, (state, action) => {
+        state.status = "failed";
+
+        state.error = action.error.message;
+      });
   },
 });
 
 export const fetchProductData = createAsyncThunk(
   "product/getProducts",
   async () => {
-    const res = await axios.get("/src/Data.json");
-    return res.data;
+    try {
+      const res = await axios.get("Data.json");
+      console.log(res.data);
+      return [...res.data.ProductData];
+    } catch (err) {
+      return err.message;
+    }
   }
 );
 
-export const { requestData } = productsSlice.actions;
+export const { productAdded } = productsSlice.actions;
 
 export default productsSlice.reducer;

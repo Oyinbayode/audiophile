@@ -5,12 +5,18 @@ import styled from "styled-components";
 import GlobalStyle from "./globalStyles";
 import Homepage from "./pages/HomePage/Homepage";
 import { Footer, NavBar } from "./components";
-import Data from "./Data.json";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProductData } from "./redux/slices/ProductsSlice";
 
 function App() {
+  const Status = useSelector((state) => state.Data.status);
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    console.log(Data);
-  }, []);
+    if (Status === "idle") {
+      dispatch(fetchProductData());
+    }
+  });
 
   return (
     <Div>
