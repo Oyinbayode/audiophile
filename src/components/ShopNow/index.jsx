@@ -21,7 +21,7 @@ const ShopNow = () => {
             <CardImage src={`${item.image}`} />
           </CardImageDiv>
           <CardTitle>{item.title}</CardTitle>
-          <CardBtnLink to="/">
+          <CardBtnLink to={item.to}>
             <p>shop</p>
             <RightArrow />
           </CardBtnLink>
