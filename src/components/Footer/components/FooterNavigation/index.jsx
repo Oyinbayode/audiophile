@@ -19,9 +19,9 @@ const FooterNavigation = () => {
       </FooterNavLogo>
       <FooterNavItems>
         <FooterNavItem to="/">Home</FooterNavItem>
-        <FooterNavItem to="/">Headphones</FooterNavItem>
-        <FooterNavItem to="/">Speakers</FooterNavItem>
-        <FooterNavItem to="/">Earphones</FooterNavItem>
+        <FooterNavItem to="/categories/Headphones">Headphones</FooterNavItem>
+        <FooterNavItem to="/categories/Speakers">Speakers</FooterNavItem>
+        <FooterNavItem to="/categories/Earphones">Earphones</FooterNavItem>
       </FooterNavItems>
     </FooterNav>
   );

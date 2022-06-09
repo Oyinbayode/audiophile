@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
 import Button from "../../utilities/Button.jsx";
@@ -13,8 +13,11 @@ import {
   Paragraph,
   New,
   Frame,
+  HeaderText,
+  HorizontalLine,
 } from "./Category.js";
 import Data from "../../Data.json";
+import { About, ShopNow } from "../../components";
 
 const CategoryPage = () => {
   const Products = Data.ProductData;
@@ -30,36 +33,60 @@ const CategoryPage = () => {
 
   console.log(CategoryData);
 
+  // State
+  const [size, setSize] = useState(window.innerWidth);
+
+  window.addEventListener("resize", () => {
+    setSize(() => window.innerWidth);
+  });
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, [Params]);
+
   return (
     <CategoryPageContainer>
-      <CategoryPageHeader>{Params.category}</CategoryPageHeader>
-
-      {CategoryData === "loading..." ? (
-        <div>Loading ...</div>
-      ) : (
-        <CategoryPageBody
-          style={
-            CategoryData[0].imgStart
-              ? { flexDirection: "row" }
-              : { flexDirection: "row-reverse" }
-          }
-        >
-          <Frame>
+      <CategoryPageHeader>
+        <HorizontalLine />
+        <HeaderText>{Params.category}</HeaderText>
+      </CategoryPageHeader>
+      <CategoryPageBody>
+        {CategoryData.map((item) => (
+          <Frame
+            key={item.id}
+            style={
+              size < 1090
+                ? { flexDirection: "column" }
+                : size > 1090
+                ? item.imgStart
+                  ? { flexDirection: "row" }
+                  : { flexDirection: "row-reverse" }
+                : null
+            }
+          >
             <CategoryPageImage>
               <CategoryPageImg
-                src={CategoryData[0].CategoryImage.Desktop}
+                src={
+                  size <= 600
+                    ? item.CategoryImage.Mobile
+                    : size <= 1090
+                    ? item.CategoryImage.Tablet
+                    : item.CategoryImage.Desktop
+                }
                 alt={CategoryData[0].slugName}
               />
             </CategoryPageImage>
             <CategoryPageText>
-              {CategoryData[0].new && <New>New Product</New>}
-              <Heading>{CategoryData[0].name}</Heading>
-              <Paragraph>{CategoryData[0].description}</Paragraph>
-              <Button to="/">See Product</Button>
+              {item.new && <New>New Product</New>}
+              <Heading>{item.name}</Heading>
+              <Paragraph>{item.description}</Paragraph>
+              <Button to={`/products/${item.id}`}>See Product</Button>
             </CategoryPageText>
           </Frame>
-        </CategoryPageBody>
-      )}
+        ))}
+        <ShopNow />
+        <About />
+      </CategoryPageBody>
     </CategoryPageContainer>
   );
 };

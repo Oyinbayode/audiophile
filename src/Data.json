@@ -41,9 +41,9 @@
       ],
       "Category": "Headphones",
       "CategoryImage": {
-        "Mobile": "/images/XX99-2-Headphones/xx99-mobile-category.svg",
-        "Tablet": "/images/XX99-2-Headphones/xx99-tablet-category.svg",
-        "Desktop": "/images/XX99-2-Headphones/xx99-desktop-category.svg"
+        "Mobile": "/images/XX99-2-Headphones/xx99-category-mobile.png",
+        "Tablet": "/images/XX99-2-Headphones/xx99-category-tablet.png",
+        "Desktop": "/images/XX99-2-Headphones/xx99-category-desktop.png"
       },
       "Gallery": {
         "One": {
@@ -132,9 +132,9 @@
       ],
       "Category": "Headphones",
       "CategoryImage": {
-        "Mobile": "/images/XX99-1-Headphones/xx99-1-mobile-category.svg",
-        "Tablet": "/images/XX99-1-Headphones/xx99-1-tablet-category.svg",
-        "Desktop": "/images/XX99-1-Headphones/xx99-1-desktop-category.svg"
+        "Mobile": "/images/XX99-1-Headphones/xx99-1-category-mobile.png",
+        "Tablet": "/images/XX99-1-Headphones/xx99-1-category-tablet.png",
+        "Desktop": "/images/XX99-1-Headphones/xx99-1-category-desktop.png"
       },
       "Gallery": {
         "One": {
@@ -223,8 +223,8 @@
       ],
       "Category": "Headphones",
       "CategoryImage": {
-        "Mobile": "/images/XX59-Headphones/xx59-mobile-category.svg",
-        "Tablet": "/images/XX59-Headphones/xx59-tablet-category.svg",
+        "Mobile": "/images/XX59-Headphones/xx59-category-mobile.png",
+        "Tablet": "/images/XX59-Headphones/xx59-category-tablet.png",
         "Desktop": "/images/XX59-Headphones/xx59-desktop-category.svg"
       },
       "Gallery": {
@@ -318,8 +318,8 @@
       ],
       "Category": "Speakers",
       "CategoryImage": {
-        "Mobile": "/images/ZX9-Speakers/zx9-mobile-category.svg",
-        "Tablet": "/images/ZX9-Speakers/zx9-tablet-category.svg",
+        "Mobile": "/images/ZX9-Speakers/zx9-category-mobile.png",
+        "Tablet": "/images/ZX9-Speakers/zx9-category-tablet.png",
         "Desktop": "/images/ZX9-Speakers/zx9-desktop-category.svg"
       },
       "Gallery": {

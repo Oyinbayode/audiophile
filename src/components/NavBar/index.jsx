@@ -37,9 +37,9 @@ const Navbar = () => {
       <NavItems>
         <NavTextItems className={clicked ? "active" : null}>
           <NavItem to="/">Home</NavItem>
-          <NavItem to="/">Headphones</NavItem>
-          <NavItem to="/">Speakers</NavItem>
-          <NavItem to="/">Earphones</NavItem>
+          <NavItem to="/categories/Headphones">Headphones</NavItem>
+          <NavItem to="/categories/Speakers">Speakers</NavItem>
+          <NavItem to="/categories/Earphones">Earphones</NavItem>
         </NavTextItems>
         <NavCart>
           <Cart />
