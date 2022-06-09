@@ -17,7 +17,7 @@ import {
   HorizontalLine,
 } from "./Category.js";
 import Data from "../../Data.json";
-import { ShopNow } from "../../components";
+import { About, ShopNow } from "../../components";
 
 const CategoryPage = () => {
   const Products = Data.ProductData;
@@ -80,11 +80,12 @@ const CategoryPage = () => {
               {item.new && <New>New Product</New>}
               <Heading>{item.name}</Heading>
               <Paragraph>{item.description}</Paragraph>
-              <Button to="/">See Product</Button>
+              <Button to={`/products/${item.id}`}>See Product</Button>
             </CategoryPageText>
           </Frame>
         ))}
         <ShopNow />
+        <About />
       </CategoryPageBody>
     </CategoryPageContainer>
   );
