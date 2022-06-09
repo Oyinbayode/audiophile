@@ -43,7 +43,7 @@
       "CategoryImage": {
         "Mobile": "/images/XX99-2-Headphones/xx99-mobile-category.svg",
         "Tablet": "/images/XX99-2-Headphones/xx99-tablet-category.svg",
-        "Desktop": "/images/XX99-2-Headphones/xx99-desktop-category.svg"
+        "Desktop": "/images/XX99-2-Headphones/xx99-category-desktop.png"
       },
       "Gallery": {
         "One": {
@@ -134,7 +134,7 @@
       "CategoryImage": {
         "Mobile": "/images/XX99-1-Headphones/xx99-1-mobile-category.svg",
         "Tablet": "/images/XX99-1-Headphones/xx99-1-tablet-category.svg",
-        "Desktop": "/images/XX99-1-Headphones/xx99-1-desktop-category.svg"
+        "Desktop": "/images/XX99-1-Headphones/xx99-1-category-desktop.png"
       },
       "Gallery": {
         "One": {

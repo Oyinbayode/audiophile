@@ -13,6 +13,8 @@ import {
   Paragraph,
   New,
   Frame,
+  HeaderText,
+  HorizontalLine,
 } from "./Category.js";
 import Data from "../../Data.json";
 
@@ -32,19 +34,22 @@ const CategoryPage = () => {
 
   return (
     <CategoryPageContainer>
-      <CategoryPageHeader>{Params.category}</CategoryPageHeader>
+      <CategoryPageHeader>
+        <HorizontalLine />
+        <HeaderText>{Params.category}</HeaderText>
+      </CategoryPageHeader>
 
       {CategoryData === "loading..." ? (
         <div>Loading ...</div>
       ) : (
-        <CategoryPageBody
-          style={
-            CategoryData[0].imgStart
-              ? { flexDirection: "row" }
-              : { flexDirection: "row-reverse" }
-          }
-        >
-          <Frame>
+        <CategoryPageBody>
+          <Frame
+            style={
+              CategoryData[0].imgStart
+                ? { flexDirection: "row" }
+                : { flexDirection: "row-reverse" }
+            }
+          >
             <CategoryPageImage>
               <CategoryPageImg
                 src={CategoryData[0].CategoryImage.Desktop}
