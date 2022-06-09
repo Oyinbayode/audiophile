@@ -31,12 +31,21 @@ export const HeaderText = styled.h1`
   letter-spacing: 1.43px;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (max-width: 600px) {
+    height: 120px;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+  }
 `;
 
 export const CategoryPageBody = styled.div`
   display: flex;
   background: #fff;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const CategoryPageImage = styled.div`
@@ -46,6 +55,17 @@ export const CategoryPageImage = styled.div`
   align-items: center;
   max-width: 540px;
   width: 100%;
+  border-radius: 8px;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (max-width: 1090px) {
+    max-width: 630px;
+    height: 352px;
+    margin-bottom: 52px;
+  }
 `;
 
 export const CategoryPageImg = styled.img`
@@ -58,6 +78,15 @@ export const CategoryPageText = styled.div`
   align-self: center;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 600px) {
+    max-width: 327px;
+  }
+
+  @media screen and (max-width: 1090px) {
+    text-align: center;
+    max-width: 572px;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -73,6 +102,12 @@ export const Heading = styled.h2`
   color: #000000;
 
   margin-bottom: 16px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 1px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -106,4 +141,19 @@ export const Frame = styled.div`
   display: flex;
   justify-content: space-between;
   height: 560px;
+
+  @media screen and (max-width: 1090px) {
+    max-width: 689px;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  @media screen and (max-width: 600px) {
+    max-width: 85vw;
+    margin-bottom: 64px;
+    margin-top: 64px;
+  }
 `;
