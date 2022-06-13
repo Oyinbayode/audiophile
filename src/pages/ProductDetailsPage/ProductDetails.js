@@ -11,29 +11,5 @@ export const Frame = styled.div`
   max-width: 1110px;
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
 `;
-
-export const ProductCard = styled.div``;
-
-export const ProductCardImage = styled.div``;
-
-export const CardImg = styled.img``;
-
-export const ProductCardBody = styled.div``;
-
-export const NewDiv = styled.h2``;
-
-export const CardBodyHeading = styled.h3``;
-
-export const CardBodyParagraph = styled.p``;
-
-export const CardBodyPrice = styled.p``;
-
-export const CardBodyCart = styled.div``;
-
-export const Btn = styled.button``;
-
-export const Quantity = styled.div``;
-
-export const QtyParagraph = styled.p``;

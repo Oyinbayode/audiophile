@@ -1,24 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import GoBack from "../../components/GoBack";
-import Button from "../../utilities/Button";
-import {
-  DetailsContainer,
-  Frame,
-  ProductCard,
-  ProductCardImage,
-  CardImg,
-  ProductCardBody,
-  NewDiv,
-  CardBodyHeading,
-  CardBodyParagraph,
-  CardBodyPrice,
-  CardBodyCart,
-  Btn,
-  Quantity,
-  QtyParagraph,
-} from "./ProductDetails.js";
+import { DetailsContainer, Frame } from "./ProductDetails.js";
 import Data from "../../Data.json";
 import { useParams } from "react-router-dom";
+import Card from "./components/ProductCard";
 
 const ProductDetailsPage = () => {
   const Products = Data.ProductData;
@@ -32,30 +17,34 @@ const ProductDetailsPage = () => {
 
   console.log(Product, Params);
 
+  const [size, setSize] = useState(window.innerWidth);
+
+  window.addEventListener("resize", () => {
+    setSize(() => window.innerWidth);
+  });
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, [Params]);
+
   return (
     <DetailsContainer>
       <Frame>
         <GoBack />
-        <ProductCard>
-          <ProductCardImage>
-            <CardImg src={Product.images.desktop} alt={Product.slugName} />
-          </ProductCardImage>
-          <ProductCardBody>
-            {Product.new && <NewDiv>New Product</NewDiv>}
-
-            <CardBodyHeading>{Product.name}</CardBodyHeading>
-            <CardBodyParagraph>{Product.description}</CardBodyParagraph>
-            <CardBodyPrice>{Product.price}</CardBodyPrice>
-            <CardBodyCart>
-              <Quantity>
-                <Btn>-</Btn>
-                <QtyParagraph></QtyParagraph>
-                <Btn>+</Btn>
-              </Quantity>
-              <Button to="#">Add to Cart</Button>
-            </CardBodyCart>
-          </ProductCardBody>
-        </ProductCard>
+        <Card
+          src={
+            size <= 600
+              ? Product.images.mobile
+              : size <= 1090
+              ? Product.images.tablet
+              : Product.images.desktop
+          }
+          alt={Product.slugName}
+          New={Product.new}
+          name={Product.name}
+          description={Product.description}
+          price={Product.price}
+        />
       </Frame>
     </DetailsContainer>
   );
