@@ -9,9 +9,9 @@
       "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
       "price": 2999,
       "images": {
-        "mobile": "/images/XX99-2-Headphones/ProductDetails/xx99-mobile-productDetails.svg",
-        "tablet": "/images/XX99-2-Headphones/ProductDetails/xx99-tablet-productDetails.svg",
-        "desktop": "/images/XX99-2-Headphones/ProductDetails/xx99-desktop-productDetails.svg"
+        "mobile": "/images/XX99-2-Headphones/ProductDetails/xx99-tablet-productDetails.png",
+        "tablet": "/images/XX99-2-Headphones/ProductDetails/xx99-tablet-productDetails.png",
+        "desktop": "/images/XX99-2-Headphones/ProductDetails/xx99-desktop-productDetails.png"
       },
       "features": [
         "Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.",
@@ -104,9 +104,9 @@
       "description": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go. ",
       "price": 1750,
       "images": {
-        "mobile": "/images/XX99-1-Headphones/ProductDetails/xx99-1-mobile-productDetails.svg",
-        "tablet": "/images/XX99-1-Headphones/ProductDetails/xx99-1-tablet-productDetails.svg",
-        "desktop": "/images/XX99-1-Headphones/ProductDetails/xx99-1-desktop-productDetails.svg"
+        "mobile": "/images/XX99-1-Headphones/ProductDetails/xx99-1-tablet-productDetails.png",
+        "tablet": "/images/XX99-1-Headphones/ProductDetails/xx99-1-tablet-productDetails.png",
+        "desktop": "/images/XX99-1-Headphones/ProductDetails/xx99-1-desktop-productDetails.png"
       },
       "features": [
         "As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.",
@@ -195,9 +195,9 @@
       "description": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
       "price": 899,
       "images": {
-        "mobile": "/images/XX59-Headphones/ProductDetails/xx59-mobile-productDetails.svg",
-        "tablet": "/images/XX59-Headphones/ProductDetails/xx59-tablet-productDetails.svg",
-        "desktop": "/images/XX59-Headphones/ProductDetails/xx59-desktop-productDetails.svg"
+        "mobile": "/images/XX59-Headphones/ProductDetails/xx59-tablet-productDetails.png",
+        "tablet": "/images/XX59-Headphones/ProductDetails/xx59-tablet-productDetails.png",
+        "desktop": "/images/XX59-Headphones/ProductDetails/xx59-desktop-productDetails.png"
       },
       "features": [
         "These headphones have been created from durable, high-quality materials tough enough to take anywhere. Its compact folding design fuses comfort and minimalist style making it perfect for travel. Flawless transmission is assured by the latest wireless technology engineered for audio synchronization with videos.",
