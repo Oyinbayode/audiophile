@@ -43,6 +43,7 @@ export const ProductCardImage = styled.div`
   @media screen and (min-width: 601px) and (max-width: 1090px) {
     max-width: 281px;
     height: 480px;
+    margin-right: 10px;
   }
 `;
 
