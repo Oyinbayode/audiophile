@@ -47,19 +47,19 @@
       },
       "Gallery": {
         "One": {
-          "Mobile": "/images/XX99-2-Headphones/Gallery/xx99-sm-1-mobile.svg",
-          "Tablet": "/images/XX99-2-Headphones/Gallery/xx99-sm-1-tablet.svg",
-          "Desktop": "/images/XX99-2-Headphones/Gallery/xx99-sm-1-desktop.svg"
+          "Mobile": "/images/XX99-2-Headphones/Gallery/xx99-mobile-1.png",
+          "Tablet": "/images/XX99-2-Headphones/Gallery/xx99-tablet-1.png",
+          "Desktop": "/images/XX59-Headphones/Gallery/xx59-desktop-1.png"
         },
         "Two": {
-          "Mobile": "/images/XX99-2-Headphones/Gallery/xx99-sm-2-mobile.svg",
-          "Tablet": "/images/XX99-2-Headphones/Gallery/xx99-sm-2-tablet.svg",
-          "Desktop": "/images/XX99-2-Headphones/Gallery/xx99-sm-2-desktop.svg"
+          "Mobile": "/images/XX99-2-Headphones/Gallery/xx99-mobile-2.png",
+          "Tablet": "/images/XX99-2-Headphones/Gallery/xx99-tablet-2.png",
+          "Desktop": "/images/XX99-2-Headphones/Gallery/xx99-desktop-2.png"
         },
         "Three": {
-          "Mobile": "/images/XX99-2-Headphones/Gallery/xx99-lg-3-mobile.svg",
-          "Tablet": "/images/XX99-2-Headphones/Gallery/xx99-lg-3-tablet.svg",
-          "Desktop": "/images/XX99-2-Headphones/Gallery/xx99-lg-3-desktop.svg"
+          "Mobile": "/images/XX99-2-Headphones/Gallery/xx99-mobile-3.png",
+          "Tablet": "/images/XX99-2-Headphones/Gallery/xx99-tablet-3.png",
+          "Desktop": "/images/XX99-2-Headphones/Gallery/xx99-desktop-3.png"
         }
       },
       "others": [
@@ -138,19 +138,19 @@
       },
       "Gallery": {
         "One": {
-          "Mobile": "/images/XX99-1-Headphones/Gallery/xx99-1-sm-1-mobile.svg",
-          "Tablet": "/images/XX99-1-Headphones/Gallery/xx99-1-sm-1-tablet.svg",
-          "Desktop": "/images/XX99-1-Headphones/Gallery/xx99-1-sm-1-desktop.svg"
+          "Mobile": "/images/XX99-1-Headphones/Gallery/xx99-1-mobile-1.png",
+          "Tablet": "/images/XX99-1-Headphones/Gallery/xx99-1-tablet-1.png",
+          "Desktop": "/images/XX99-1-Headphones/Gallery/xx99-1-desktop-1.png"
         },
         "Two": {
-          "Mobile": "/images/XX99-1-Headphones/Gallery/xx99-1-sm-2-mobile.svg",
-          "Tablet": "/images/XX99-1-Headphones/Gallery/xx99-1-sm-2-tablet.svg",
-          "Desktop": "/images/XX99-1-Headphones/Gallery/xx99-1-sm-2-desktop.svg"
+          "Mobile": "/images/XX99-1-Headphones/Gallery/xx99-1-mobile-2.png",
+          "Tablet": "/images/XX99-1-Headphones/Gallery/xx99-1-tablet-2.png",
+          "Desktop": "/images/XX99-1-Headphones/Gallery/xx99-1-desktop-2.png"
         },
         "Three": {
-          "Mobile": "/images/XX99-1-Headphones/Gallery/xx99-1-lg-3-mobile.svg",
-          "Tablet": "/images/XX99-1-Headphones/Gallery/xx99-1-lg-3-tablet.svg",
-          "Desktop": "/images/XX99-1-Headphones/Gallery/xx99-1-lg-3-tablet.svg"
+          "Mobile": "/images/XX99-1-Headphones/Gallery/xx99-1-mobile-3.png",
+          "Tablet": "/images/XX99-1-Headphones/Gallery/xx99-1-tablet-3.png",
+          "Desktop": "/images/XX99-1-Headphones/Gallery/xx99-1-desktop-3.png"
         }
       },
       "others": [
@@ -229,19 +229,19 @@
       },
       "Gallery": {
         "One": {
-          "Mobile": "/images/XX59-Headphones/Gallery/xx59-sm-1-mobile.svg",
-          "Tablet": "/images/XX59-Headphones/Gallery/xx59-sm-1-tablet.svg",
-          "Desktop": "/images/XX59-Headphones/Gallery/xx59-sm-1-desktop.svg"
+          "Mobile": "/images/XX59-Headphones/Gallery/xx59-mobile-1.png",
+          "Tablet": "/images/XX59-Headphones/Gallery/xx59-tablet-1.png",
+          "Desktop": "/images/XX59-Headphones/Gallery/xx59-desktop-1.png"
         },
         "Two": {
-          "Mobile": "/images/XX59-Headphones/Gallery/xx59-sm-2-mobile.svg",
-          "Tablet": "/images/XX59-Headphones/Gallery/xx59-sm-2-tablet.svg",
-          "Desktop": "/images/XX59-Headphones/Gallery/xx59-sm-2-desktop.svg"
+          "Mobile": "/images/XX59-Headphones/Gallery/xx59-mobile-2.png",
+          "Tablet": "/images/XX59-Headphones/Gallery/xx59-tablet-2.png",
+          "Desktop": "/images/XX59-Headphones/Gallery/xx59-desktop-2.png"
         },
         "Three": {
-          "Mobile": "/images/XX59-Headphones/Gallery/xx59-lg-3-mobile.svg",
-          "Tablet": "/images/XX59-Headphones/Gallery/xx59-lg-3-tablet.svg",
-          "Desktop": "/images/XX59-Headphones/Gallery/xx59-lg-3-desktop.svg"
+          "Mobile": "/images/XX59-Headphones/Gallery/xx59-mobile-3.png",
+          "Tablet": "/images/XX59-Headphones/Gallery/xx59-tablet-3.png",
+          "Desktop": "/images/XX59-Headphones/Gallery/xx59-desktop-3.png"
         }
       },
       "others": [
@@ -324,19 +324,19 @@
       },
       "Gallery": {
         "One": {
-          "Mobile": "/images/ZX9-Speakers/Gallery/zx9-sm-1-mobile.svg",
-          "Tablet": "/images/ZX9-Speakers/Gallery/zx9-sm-1-tablet.svg",
-          "Desktop": "/images/ZX9-Speakers/Gallery/zx9-sm-1-desktop.svg"
+          "Mobile": "/images/ZX9-Speakers/Gallery/zx9-mobile-1.png",
+          "Tablet": "/images/ZX9-Speakers/Gallery/zx9-tablet-1.png",
+          "Desktop": "/images/ZX9-Speakers/Gallery/zx9-desktop-1.png"
         },
         "Two": {
-          "Mobile": "/images/ZX9-Speakers/Gallery/zx9-sm-2-mobile.svg",
-          "Tablet": "/images/ZX9-Speakers/Gallery/zx9-sm-2-tablet.svg",
-          "Desktop": "/images/ZX9-Speakers/Gallery/zx9-sm-2-desktop.svg"
+          "Mobile": "/images/ZX9-Speakers/Gallery/zx9-mobile-2.png",
+          "Tablet": "/images/ZX9-Speakers/Gallery/zx9-tablet-2.png",
+          "Desktop": "/images/ZX9-Speakers/Gallery/zx9-desktop-2.png"
         },
         "Three": {
-          "Mobile": "/images/ZX9-Speakers/Gallery/zx9-lg-3-mobile.svg",
-          "Tablet": "/images/ZX9-Speakers/Gallery/zx9-sm-1-tablet.svg",
-          "Desktop": "/images/ZX9-Speakers/Gallery/zx9-lg-3-desktop.svg"
+          "Mobile": "/images/ZX9-Speakers/Gallery/zx9-mobile-3.png",
+          "Tablet": "/images/ZX9-Speakers/Gallery/zx9-tablet-3.png",
+          "Desktop": "/images/ZX9-Speakers/Gallery/zx9-desktop-3.png"
         }
       },
       "others": [
@@ -419,19 +419,19 @@
       },
       "Gallery": {
         "One": {
-          "Mobile": "/images/ZX7-Speakers/Gallery/zx7-sm-1-mobile.svg",
-          "Tablet": "/images/ZX7-Speakers/Gallery/zx7-sm-1-tablet.svg",
-          "Desktop": "/images/ZX7-Speakers/Gallery/zx7-sm-1-desktop.svg"
+          "Mobile": "/images/ZX7-Speakers/Gallery/zx7-mobile-1.png",
+          "Tablet": "/images/ZX7-Speakers/Gallery/zx7-tablet-1.png",
+          "Desktop": "/images/ZX7-Speakers/Gallery/zx7-desktop-1.png"
         },
         "Two": {
-          "Mobile": "/images/ZX7-Speakers/Gallery/zx7-sm-2-mobile.svg",
-          "Tablet": "/images/ZX7-Speakers/Gallery/zx7-sm-2-tablet.svg",
-          "Desktop": "/images/ZX7-Speakers/Gallery/zx7-sm-2-desktop.svg"
+          "Mobile": "/images/ZX7-Speakers/Gallery/zx7-mobile-2.png",
+          "Tablet": "/images/ZX7-Speakers/Gallery/zx7-tablet-2.png",
+          "Desktop": "/images/ZX7-Speakers/Gallery/zx7-desktop-2.png"
         },
         "Three": {
-          "Mobile": "/images/ZX7-Speakers/Gallery/zx7-lg-3-mobile.svg",
-          "Tablet": "/images/ZX7-Speakers/Gallery/zx7-lg-3-tablet.svg",
-          "Desktop": "/images/ZX7-Speakers/Gallery/zx7-lg-3-desktop.svg"
+          "Mobile": "/images/ZX7-Speakers/Gallery/zx7-mobile-3.png",
+          "Tablet": "/images/ZX7-Speakers/Gallery/zx7-tablet-3.png",
+          "Desktop": "/images/ZX7-Speakers/Gallery/zx7-desktop-3.png"
         }
       },
       "others": [
@@ -514,19 +514,19 @@
       },
       "Gallery": {
         "One": {
-          "Mobile": "/images/YX1-Earphones/Gallery/yx1-sm-1-mobile.svg",
-          "Tablet": "/images/YX1-Earphones/Gallery/yx1-sm-1-tablet.svg",
-          "Desktop": "/images/YX1-Earphones/Gallery/yx1-sm-1-desktop.svg"
+          "Mobile": "/images/YX1-Earphones/Gallery/yx1-mobile-1.png",
+          "Tablet": "/images/YX1-Earphones/Gallery/yx1-tablet-1.png",
+          "Desktop": "/images/YX1-Earphones/Gallery/yx1-desktop-1.png"
         },
         "Two": {
-          "Mobile": "/images/YX1-Earphones/Gallery/yx1-sm-2-mobile.svg",
-          "Tablet": "/images/YX1-Earphones/Gallery/yx1-sm-2-tablet.svg",
-          "Desktop": "/images/YX1-Earphones/Gallery/yx1-sm-2-desktop.svg"
+          "Mobile": "/images/YX1-Earphones/Gallery/yx1-mobile-2.png",
+          "Tablet": "/images/YX1-Earphones/Gallery/yx1-tablet-2.png",
+          "Desktop": "/images/YX1-Earphones/Gallery/yx1-desktop-2.png"
         },
         "Three": {
-          "Mobile": "/images/YX1-Earphones/Gallery/yx1-lg-3-mobile.svg",
-          "Tablet": "/images/YX1-Earphones/Gallery/yx1-lg-3-tablet.svg",
-          "Desktop": "/images/YX1-Earphones/Gallery/yx1-lg-3-desktop.svg"
+          "Mobile": "/images/YX1-Earphones/Gallery/yx1-mobile-3.png",
+          "Tablet": "/images/YX1-Earphones/Gallery/yx1-tablet-3.png",
+          "Desktop": "/images/YX1-Earphones/Gallery/yx1-desktop-3.png"
         }
       },
       "others": [
