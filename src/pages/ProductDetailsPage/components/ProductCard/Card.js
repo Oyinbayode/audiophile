@@ -5,13 +5,15 @@ export const ProductCard = styled.div`
   width: 100%;
   max-width: 1110px;
   justify-content: space-between;
+  margin-top: 160px;
+  margin-bottom: 160px;
 
   align-items: center;
 
   @media screen and (max-width: 1090px) {
     max-width: 689px;
     height: 480px;
-    margin-top: 120px;
+    margin-top: 24px;
     margin-bottom: 120px;
   }
 
@@ -20,8 +22,7 @@ export const ProductCard = styled.div`
     align-items: center;
     height: fit-content;
     max-width: 85vw;
-    margin-bottom: 64px;
-    margin-top: 64px;
+    margin-bottom: 88px;
   }
 `;
 

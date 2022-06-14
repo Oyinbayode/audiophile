@@ -4,6 +4,7 @@ import { DetailsContainer, Frame } from "./ProductDetails.js";
 import Data from "../../Data.json";
 import { useParams } from "react-router-dom";
 import Card from "./components/ProductCard";
+import Feature from "./components/Features";
 
 const ProductDetailsPage = () => {
   const Products = Data.ProductData;
@@ -45,6 +46,7 @@ const ProductDetailsPage = () => {
           description={Product.description}
           price={Product.price}
         />
+        <Feature features={Product.features} items={Product.boxItem} />
       </Frame>
     </DetailsContainer>
   );
