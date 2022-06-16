@@ -3,22 +3,33 @@ import styled from "styled-components/macro";
 import { RiArrowRightSLine } from "react-icons/ri";
 
 export const ShopNowContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin: 0 auto;
+  grid-gap: 30px;
   max-width: 1110px;
   width: 100%;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  flex-wrap: wrap;
-  margin-top: 200px;
 
-  @media screen and (max-width: 1080px) {
-    max-width: 690px;
+  /* flex-wrap: wrap; */
+  margin-top: 10rem;
+
+  @media screen and (max-width: 1130px) {
+    display: flex;
+    justify-content: center;
   }
 
-  @media screen and (max-width: 728px) {
-    justify-content: center;
+  @media screen and (max-width: 1090px) {
+    justify-content: space-between;
+    max-width: 689px;
+    margin-top: 7rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(327px));
+    grid-gap: 10px;
+    justify-items: center;
   }
 `;
 
@@ -27,29 +38,24 @@ export const Card = styled.div`
   flex-direction: column;
   background: #f1f1f1;
   border-radius: 8px;
-  max-width: 350px;
   width: 100%;
   height: 204px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8rem;
-  /* margin-top: 200px; */
-
-  flex-basis: 350px;
-  flex-shrink: 1;
-  flex-grow: 1;
+  margin-bottom: 4rem;
   transition: ease-in-out 0.3s;
 
   &:hover {
     transform: scale(1.05);
   }
 
-  @media screen and (max-width: 1080px) {
-    max-width: 223px;
+  @media screen and (max-width: 1090px) {
+    width: 223px;
   }
 
-  @media screen and (max-width: 728px) {
+  @media screen and (max-width: 600px) {
     max-width: 327px;
+    width: 100%;
   }
 `;
 
@@ -62,8 +68,8 @@ export const CardImageDiv = styled.div`
 
 export const CardImage = styled.img`
   width: 100%;
-  max-width: 122px;
-  height: 160px;
+  max-width: min-content;
+  /* height: 160px; */
 `;
 
 export const CardTitle = styled.h3`
@@ -75,7 +81,7 @@ export const CardTitle = styled.h3`
   text-transform: uppercase;
   margin: 0;
 
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 600px) {
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 1.07143px;

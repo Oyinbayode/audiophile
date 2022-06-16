@@ -1,19 +1,28 @@
 {
   "dataBody": [
     {
-      "image": "/images/headphones.svg",
+      "image": {
+        "desktop": "/images/headphones.svg",
+        "tablet": "/images/xx99-1.png"
+      },
       "title": "headphones",
       "id": 1,
       "to": "/categories/Headphones"
     },
     {
-      "image": "/images/Speakers.svg",
+      "image": {
+        "desktop": "/images/speakers.svg",
+        "tablet": "/images/zx9.png"
+      },
       "title": "speakers",
       "id": 2,
       "to": "/categories/Speakers"
     },
     {
-      "image": "/images/Earphones.svg",
+      "image": {
+        "desktop": "/images/earphones.svg",
+        "tablet": "/images/yx1.png"
+      },
       "title": "earphones",
       "id": 3,
       "to": "/categories/Earphones"
