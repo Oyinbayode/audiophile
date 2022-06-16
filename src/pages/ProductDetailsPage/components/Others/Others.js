@@ -11,6 +11,7 @@ export const OthersContainer = styled.div`
     max-width: 689px;
     height: 480px;
     margin-top: 24px;
+    margin-bottom: 7rem;
   }
 
   @media screen and (max-width: 600px) {
@@ -18,6 +19,7 @@ export const OthersContainer = styled.div`
     align-items: center;
     height: fit-content;
     max-width: 85vw;
+    margin-bottom: 0;
   }
 `;
 

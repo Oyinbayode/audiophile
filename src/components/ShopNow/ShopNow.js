@@ -19,7 +19,8 @@ export const ShopNowContainer = styled.div`
   }
 
   @media screen and (max-width: 1090px) {
-    max-width: 690px;
+    justify-content: space-between;
+    max-width: 689px;
     margin-top: 7rem;
   }
 
@@ -37,18 +38,11 @@ export const Card = styled.div`
   flex-direction: column;
   background: #f1f1f1;
   border-radius: 8px;
-  /* max-width: 350px; */
   width: 100%;
   height: 204px;
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
-  /* margin-top: 200px; */
-
-  /* flex-basis: 350px;
-  flex-shrink: 1;
-  flex-grow: 1; */
-  border: 1px solid black;
   transition: ease-in-out 0.3s;
 
   &:hover {
@@ -87,7 +81,7 @@ export const CardTitle = styled.h3`
   text-transform: uppercase;
   margin: 0;
 
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 600px) {
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 1.07143px;
