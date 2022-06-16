@@ -5,7 +5,7 @@ export const ProductCard = styled.div`
   width: 100%;
   max-width: 1110px;
   justify-content: space-between;
-  margin-top: 160px;
+  margin-top: 56px;
   margin-bottom: 160px;
   align-items: center;
 
