@@ -66,9 +66,9 @@
         {
           "id": 2,
           "images": {
-            "mobile": "/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "mobile": "/images/XX99-1-Headphones/Others/xx99-1-mobile.png",
             "tablet": "/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
-            "desktop": "/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+            "desktop": "/images/XX99-1-Headphones/Others/xx99-1-desktop.png"
           },
           "name": "XX99 MARK I",
           "slugName": "xx99-mark-i"
@@ -76,9 +76,9 @@
         {
           "id": 3,
           "images": {
-            "mobile": "/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "mobile": "/images/XX59-Headphones/Others/xx59-mobile.png",
             "tablet": "/images/XX59-Headphones/Others/xx59-tablet.svg",
-            "desktop": "/images/XX59-Headphones/Others/xx59-desktop.svg"
+            "desktop": "/images/XX59-Headphones/Others/xx59-desktop.png"
           },
           "name": "XX59",
           "slugName": "xx59"
@@ -86,9 +86,9 @@
         {
           "id": 4,
           "images": {
-            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.png",
             "tablet": "/images/ZX9-Speakers/Others/zx9-tablet.svg",
-            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.svg"
+            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.png"
           },
           "name": "ZX9 Speakers",
           "slugName": "zx9"
@@ -157,9 +157,9 @@
         {
           "id": 1,
           "images": {
-            "mobile": "/images/XX99-2-Headphones/Others/xx99-mobile.svg",
+            "mobile": "/images/XX99-2-Headphones/Others/xx99-mobile.png",
             "tablet": "/images/XX99-2-Headphones/Others/xx99-tablet.svg",
-            "desktop": "/images/XX99-2-Headphones/Others/xx99-desktop.svg"
+            "desktop": "/images/XX99-2-Headphones/Others/xx99-desktop.png"
           },
           "name": "XX99 MARK II",
           "slugName": "xx99-mark-ii"
@@ -167,9 +167,9 @@
         {
           "id": 3,
           "images": {
-            "mobile": "/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "mobile": "/images/XX59-Headphones/Others/xx59-mobile.png",
             "tablet": "/images/XX59-Headphones/Others/xx59-tablet.svg",
-            "desktop": "/images/XX59-Headphones/Others/xx59-desktop.svg"
+            "desktop": "/images/XX59-Headphones/Others/xx59-desktop.png"
           },
           "name": "XX59",
           "slugName": "xx59"
@@ -177,9 +177,9 @@
         {
           "id": 4,
           "images": {
-            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.png",
             "tablet": "/images/ZX9-Speakers/Others/zx9-tablet.svg",
-            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.svg"
+            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.png"
           },
           "name": "ZX9 Speaker",
           "slugName": "zx9"
@@ -248,9 +248,9 @@
         {
           "id": 1,
           "images": {
-            "mobile": "/images/XX99-2-Headphones/Others/xx99-mobile.svg",
+            "mobile": "/images/XX99-2-Headphones/Others/xx99-mobile.png",
             "tablet": "/images/XX99-2-Headphones/Others/xx99-tablet.svg",
-            "desktop": "/images/XX99-2-Headphones/Others/xx99-desktop.svg"
+            "desktop": "/images/XX99-2-Headphones/Others/xx99-desktop.png"
           },
           "name": "XX99 MARK II",
           "slugName": "xx99-mark-ii"
@@ -258,9 +258,9 @@
         {
           "id": 2,
           "images": {
-            "mobile": "/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "mobile": "/images/XX99-1-Headphones/Others/xx99-1-mobile.png",
             "tablet": "/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
-            "desktop": "/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+            "desktop": "/images/XX99-1-Headphones/Others/xx99-1-desktop.png"
           },
           "name": "XX99 MARK I",
           "slugName": "xx99-mark-i"
@@ -268,9 +268,9 @@
         {
           "id": 4,
           "images": {
-            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.png",
             "tablet": "/images/ZX9-Speakers/Others/zx9-tablet.svg",
-            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.svg"
+            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.png"
           },
           "name": "ZX9 Speaker",
           "slugName": "zx9"
@@ -438,9 +438,9 @@
         {
           "id": 4,
           "images": {
-            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.png",
             "tablet": "/images/ZX9-Speakers/Others/zx9-tablet.svg",
-            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.svg"
+            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.png"
           },
           "name": "ZX9 Speaker",
           "slugName": "zx9"
@@ -448,9 +448,9 @@
         {
           "id": 2,
           "images": {
-            "mobile": "/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "mobile": "/images/XX99-1-Headphones/Others/xx99-1-mobile.png",
             "tablet": "/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
-            "desktop": "/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+            "desktop": "/images/XX99-1-Headphones/Others/xx99-1-desktop.png"
           },
           "name": "XX99 MARK I",
           "slugName": "xx99-mark-i"
@@ -458,9 +458,9 @@
         {
           "id": 3,
           "images": {
-            "mobile": "/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "mobile": "/images/XX59-Headphones/Others/xx59-mobile.png",
             "tablet": "/images/XX59-Headphones/Others/xx59-tablet.svg",
-            "desktop": "/images/XX59-Headphones/Others/xx59-desktop.svg"
+            "desktop": "/images/XX59-Headphones/Others/xx59-desktop.png"
           },
           "name": "XX59",
           "slugName": "xx59"
@@ -533,9 +533,9 @@
         {
           "id": 2,
           "images": {
-            "mobile": "/images/XX99-1-Headphones/Others/xx99-1-mobile.svg",
+            "mobile": "/images/XX99-1-Headphones/Others/xx99-1-mobile.png",
             "tablet": "/images/XX99-1-Headphones/Others/xx99-1-tablet.svg",
-            "desktop": "/images/XX99-1-Headphones/Others/xx99-1-desktop.svg"
+            "desktop": "/images/XX99-1-Headphones/Others/xx99-1-desktop.png"
           },
           "name": "XX99 MARK I",
           "slugName": "xx99-mark-i"
@@ -543,9 +543,9 @@
         {
           "id": 3,
           "images": {
-            "mobile": "/images/XX59-Headphones/Others/xx59-mobile.svg",
+            "mobile": "/images/XX59-Headphones/Others/xx59-mobile.png",
             "tablet": "/images/XX59-Headphones/Others/xx59-tablet.svg",
-            "desktop": "/images/XX59-Headphones/Others/xx59-desktop.svg"
+            "desktop": "/images/XX59-Headphones/Others/xx59-desktop.png"
           },
           "name": "XX59",
           "slugName": "xx59"
@@ -553,9 +553,9 @@
         {
           "id": 4,
           "images": {
-            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.svg",
+            "mobile": "/images/ZX9-Speakers/Others/zx9-mobile.png",
             "tablet": "/images/ZX9-Speakers/Others/zx9-tablet.svg",
-            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.svg"
+            "desktop": "/images/ZX9-Speakers/Others/zx9-desktop.png"
           },
           "name": "ZX9 Speaker",
           "slugName": "zx9"

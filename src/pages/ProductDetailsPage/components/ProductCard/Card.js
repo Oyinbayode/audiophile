@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const ProductCard = styled.div`
   display: flex;
@@ -7,7 +7,6 @@ export const ProductCard = styled.div`
   justify-content: space-between;
   margin-top: 160px;
   margin-bottom: 160px;
-
   align-items: center;
 
   @media screen and (max-width: 1090px) {

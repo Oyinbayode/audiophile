@@ -3,9 +3,11 @@ import GoBack from "../../components/GoBack";
 import { DetailsContainer, Frame } from "./ProductDetails.js";
 import Data from "../../Data.json";
 import { useParams } from "react-router-dom";
+import { ShopNow } from "../../components";
 import Card from "./components/ProductCard";
 import Feature from "./components/Features";
 import Gallery from "./components/Gallery";
+import Others from "./components/Others";
 
 const ProductDetailsPage = () => {
   const Products = Data.ProductData;
@@ -53,6 +55,8 @@ const ProductDetailsPage = () => {
           alt={Product.slugName}
           Params={Params}
         />
+        <Others Params={Params} items={Product.others} />
+        <ShopNow />
       </Frame>
     </DetailsContainer>
   );

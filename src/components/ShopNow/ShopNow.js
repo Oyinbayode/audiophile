@@ -13,7 +13,7 @@ export const ShopNowContainer = styled.div`
   flex-wrap: wrap;
   margin-top: 200px;
 
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 1090px) {
     max-width: 690px;
   }
 
