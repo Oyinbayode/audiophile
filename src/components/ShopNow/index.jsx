@@ -18,7 +18,7 @@ const ShopNow = () => {
       {data.map((item) => (
         <Card key={item.id}>
           <CardImageDiv>
-            <CardImage src={`${item.image}`} />
+            <CardImage src={`${item.image.tablet}`} />
           </CardImageDiv>
           <CardTitle>{item.title}</CardTitle>
           <CardBtnLink to={item.to}>
