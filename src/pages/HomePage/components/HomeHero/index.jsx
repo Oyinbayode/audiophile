@@ -27,12 +27,12 @@ const HomeHero = () => {
       <HeroMain>
         <HeroLeft>
           <HeroParagraph>New Product</HeroParagraph>
-          <HeroHeader>XX91 Mark ii headphones</HeroHeader>
+          <HeroHeader>XX99 Mark ii headphones</HeroHeader>
           <HeroText>
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </HeroText>
-          <Button to="/">See product</Button>
+          <Button to="/products/1">See product</Button>
         </HeroLeft>
         <HeroRight>
           <HeroHeadphoneImage

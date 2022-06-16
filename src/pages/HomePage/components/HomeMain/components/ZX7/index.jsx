@@ -7,7 +7,7 @@ const ZX7 = () => {
     <ZX7Container>
       <ZX7Frame>
         <ZX7Header>zx7 speaker</ZX7Header>
-        <Button transparent to="/">
+        <Button transparent to="/products/5">
           See Product
         </Button>
       </ZX7Frame>

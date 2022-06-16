@@ -21,7 +21,7 @@ const YX1 = () => {
         <YX1Body>
           <YX1Text>
             <YX1Header>YX1 earphones</YX1Header>
-            <Button transparent to="/">
+            <Button transparent to="/products/6">
               See Product
             </Button>
           </YX1Text>

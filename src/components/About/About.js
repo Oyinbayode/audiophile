@@ -6,15 +6,18 @@ export const AboutContainer = styled.div`
   align-items: center;
   max-width: 1110px;
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 160px;
+  margin-top: 160px;
 
   @media screen and (max-width: 1090px) {
     max-width: 689px;
+    margin-top: 3rem;
   }
 
   @media screen and (max-width: 600px) {
     max-width: 85vw;
     margin-bottom: 20px;
+    margin-top: 2rem;
   }
 `;
 
