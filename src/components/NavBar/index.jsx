@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Audiophile from "./assets/images/Audiophile-Logo.svg";
 
@@ -14,6 +14,7 @@ import {
   Hamburger,
   Times,
   Bars,
+  Span,
 } from "./NavBar.js";
 
 const Navbar = () => {
@@ -23,6 +24,12 @@ const Navbar = () => {
     setClicked((prev) => !prev);
     console.log(clicked);
   };
+
+  const [cartState, setCartState] = useState(null);
+
+  useEffect(() => {
+    setCartState(JSON.parse(localStorage.getItem("Cart")));
+  }, []);
 
   return (
     <NavContainer>
@@ -43,6 +50,7 @@ const Navbar = () => {
         </NavTextItems>
         <NavCart>
           <Cart />
+          <Span>{cartState !== null ? cartState.Cart.length : 0}</Span>
         </NavCart>
       </NavItems>
     </NavContainer>

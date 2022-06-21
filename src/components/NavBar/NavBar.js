@@ -109,6 +109,10 @@ export const Cart = styled(BiCart)`
   }
 `;
 
+export const Span = styled.span`
+  color: red;
+`;
+
 export const Times = styled(FaTimes)`
   color: #fff;
   font-size: 16px;

@@ -48,6 +48,7 @@ const ProductDetailsPage = () => {
           name={Product.name}
           description={Product.description}
           price={Product.price}
+          Product={Product}
         />
         <Feature features={Product.features} items={Product.boxItem} />
         <Gallery

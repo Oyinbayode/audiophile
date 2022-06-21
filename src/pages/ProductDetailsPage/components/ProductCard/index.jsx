@@ -14,8 +14,10 @@ import {
   QtyParagraph,
 } from "./Card";
 import Button from "../../../../utilities/Button";
+import { useDispatch } from "react-redux";
+import { addProduct, productIsAdded } from "../../../../redux/slices/cartSlice";
 
-const Card = ({ src, alt, name, description, price, New }) => {
+const Card = ({ src, alt, name, description, price, New, Product }) => {
   const [quantity, setQuantity] = useState(1);
 
   const handleIncrement = () => {
@@ -38,6 +40,20 @@ const Card = ({ src, alt, name, description, price, New }) => {
     }).format(number);
   };
 
+  const dispatch = useDispatch();
+
+  const AddToCart = () => {
+    let ProductCart = {
+      id: Product.id,
+      name: Product.name,
+      price: Product.price,
+      quantity: quantity,
+    };
+
+    dispatch(addProduct(ProductCart));
+    setQuantity(1);
+  };
+
   return (
     <ProductCard>
       <ProductCardImage>
@@ -55,7 +71,9 @@ const Card = ({ src, alt, name, description, price, New }) => {
             <QtyParagraph>{quantity}</QtyParagraph>
             <Btn onClick={handleIncrement}>+</Btn>
           </Quantity>
-          <Button to="#">Add to Cart</Button>
+          <Button to="#" onClick={AddToCart}>
+            Add to Cart
+          </Button>
         </CardBodyCart>
       </ProductCardBody>
     </ProductCard>
