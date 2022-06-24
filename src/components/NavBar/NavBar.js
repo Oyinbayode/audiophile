@@ -110,7 +110,10 @@ export const Cart = styled(BiCart)`
 `;
 
 export const Span = styled.span`
-  color: red;
+  position: absolute;
+  color: #d87d4a;
+  border-radius: 50%;
+  width: 16px;
 `;
 
 export const Times = styled(FaTimes)`

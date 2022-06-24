@@ -14,6 +14,7 @@ export const cartSlice = createSlice({
         const isInCart = state.Cart.find(
           (item) => item.id === action.payload.id
         );
+
         if (!isInCart) {
           state.Cart.push(action.payload);
           state.TotalPrice += action.payload.price * action.payload.quantity;
@@ -21,19 +22,23 @@ export const cartSlice = createSlice({
           isInCart.quantity += action.payload.quantity;
           state.TotalPrice += action.payload.quantity * action.payload.price;
         }
-        localStorage.setItem("Cart", JSON.stringify(state));
       },
     },
     emptyCart: {
       reducer(state) {
         state.Cart = [];
         state.TotalPrice = 0;
-        localStorage.clear();
       },
     },
+
+    // setCart: {
+    //   reducer(state) {
+    //     const Cart = state.Cart;
+    //   },
+    // },
   },
 });
 
-export const { addProduct } = cartSlice.actions;
+export const { addProduct, emptyCart } = cartSlice.actions;
 
 export default cartSlice.reducer;

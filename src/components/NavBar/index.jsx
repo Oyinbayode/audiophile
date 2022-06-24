@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Audiophile from "./assets/images/Audiophile-Logo.svg";
 
@@ -27,9 +28,12 @@ const Navbar = () => {
 
   const [cartState, setCartState] = useState(null);
 
+  const cartProducts = useSelector((state) => state.cart.Cart);
+
   useEffect(() => {
-    setCartState(JSON.parse(localStorage.getItem("Cart")));
-  }, []);
+    console.log(cartProducts);
+    setCartState(() => cartProducts);
+  }, [cartProducts]);
 
   return (
     <NavContainer>
@@ -50,7 +54,7 @@ const Navbar = () => {
         </NavTextItems>
         <NavCart>
           <Cart />
-          <Span>{cartState !== null ? cartState.Cart.length : 0}</Span>
+          <Span>{cartState && cartProducts.length}</Span>
         </NavCart>
       </NavItems>
     </NavContainer>
