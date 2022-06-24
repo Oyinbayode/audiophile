@@ -16,6 +16,8 @@ import {
 } from "./Card";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../../../redux/slices/cartSlice";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Card = ({ src, alt, name, description, price, New, Product }) => {
   const [quantity, setQuantity] = useState(1);
@@ -52,10 +54,21 @@ const Card = ({ src, alt, name, description, price, New, Product }) => {
 
     dispatch(addProduct(ProductCart));
     setQuantity(1);
+
+    toast.success("Added to cart!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   };
 
   return (
     <ProductCard>
+      {/* <ToastContainer /> */}
       <ProductCardImage>
         <CardImg src={src} alt={alt} />
       </ProductCardImage>

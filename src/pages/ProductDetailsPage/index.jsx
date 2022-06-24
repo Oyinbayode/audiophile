@@ -8,6 +8,7 @@ import Card from "./components/ProductCard";
 import Feature from "./components/Features";
 import Gallery from "./components/Gallery";
 import Others from "./components/Others";
+import { ToastContainer } from "react-toastify";
 
 const ProductDetailsPage = () => {
   const Products = Data.ProductData;
@@ -35,6 +36,7 @@ const ProductDetailsPage = () => {
     <DetailsContainer>
       <Frame>
         <GoBack />
+        <ToastContainer />
         <Card
           src={
             size <= 600
