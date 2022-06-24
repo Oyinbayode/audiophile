@@ -16,7 +16,9 @@ import {
   Times,
   Bars,
   Span,
+  CartButton,
 } from "./NavBar.js";
+import ReactModal from "react-modal";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -34,6 +36,17 @@ const Navbar = () => {
     console.log(cartProducts);
     setCartState(() => cartProducts);
   }, [cartProducts]);
+
+  // Modal
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsOpen(() => !isOpen);
+  };
+
+  const handleModalClose = () => {
+    setIsOpen(false);
+  };
 
   return (
     <NavContainer>
@@ -53,10 +66,20 @@ const Navbar = () => {
           <NavItem to="/categories/Earphones">Earphones</NavItem>
         </NavTextItems>
         <NavCart>
-          <Cart />
+          <CartButton onClick={handleModalOpen}>
+            <Cart />
+          </CartButton>
+
           <Span>{cartState && cartProducts.length}</Span>
         </NavCart>
       </NavItems>
+      <ReactModal
+        isOpen={isOpen}
+        onRequestClose={handleModalClose}
+        shouldCloseOnOverlayClick={true}
+      >
+        This is a Modal
+      </ReactModal>
     </NavContainer>
   );
 };

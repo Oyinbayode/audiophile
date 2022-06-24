@@ -16,7 +16,7 @@ import {
 } from "./Card";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../../../redux/slices/cartSlice";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Card = ({ src, alt, name, description, price, New, Product }) => {

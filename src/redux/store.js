@@ -4,7 +4,6 @@ import { combineReducers } from "redux";
 import { persistReducer } from "redux-persist";
 import thunk from "redux-thunk";
 import cartReducer from "./slices/cartSlice";
-import ProductsReducer from "./slices/ProductsSlice";
 
 const reducers = combineReducers({
   cart: cartReducer,
