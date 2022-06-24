@@ -12,10 +12,14 @@ import {
   Btn,
   Quantity,
   QtyParagraph,
+  Button,
 } from "./Card";
-import Button from "../../../../utilities/Button";
+import { useDispatch } from "react-redux";
+import { addProduct } from "../../../../redux/slices/cartSlice";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const Card = ({ src, alt, name, description, price, New }) => {
+const Card = ({ src, alt, name, description, price, New, Product }) => {
   const [quantity, setQuantity] = useState(1);
 
   const handleIncrement = () => {
@@ -38,8 +42,33 @@ const Card = ({ src, alt, name, description, price, New }) => {
     }).format(number);
   };
 
+  const dispatch = useDispatch();
+
+  const AddToCart = () => {
+    let ProductCart = {
+      id: Product.id,
+      name: Product.name,
+      price: Product.price,
+      quantity: quantity,
+    };
+
+    dispatch(addProduct(ProductCart));
+    setQuantity(1);
+
+    toast.success("Added to cart!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   return (
     <ProductCard>
+      {/* <ToastContainer /> */}
       <ProductCardImage>
         <CardImg src={src} alt={alt} />
       </ProductCardImage>
@@ -55,7 +84,7 @@ const Card = ({ src, alt, name, description, price, New }) => {
             <QtyParagraph>{quantity}</QtyParagraph>
             <Btn onClick={handleIncrement}>+</Btn>
           </Quantity>
-          <Button to="#">Add to Cart</Button>
+          <Button onClick={AddToCart}>Add to Cart</Button>
         </CardBodyCart>
       </ProductCardBody>
     </ProductCard>

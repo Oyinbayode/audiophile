@@ -109,6 +109,18 @@ export const Cart = styled(BiCart)`
   }
 `;
 
+export const CartButton = styled.button`
+  background: none;
+  border: none;
+`;
+
+export const Span = styled.span`
+  position: absolute;
+  color: #d87d4a;
+  border-radius: 50%;
+  width: 16px;
+`;
+
 export const Times = styled(FaTimes)`
   color: #fff;
   font-size: 16px;

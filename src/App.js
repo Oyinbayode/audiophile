@@ -5,8 +5,16 @@ import styled from "styled-components";
 import GlobalStyle from "./globalStyles";
 import { HomePage, CategoryPage, ProductDetailsPage } from "./pages";
 import { Footer, NavBar } from "./components";
+import { useDispatch } from "react-redux";
+import { emptyCart } from "./redux/slices/cartSlice";
 
 function App() {
+  const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(emptyCart);
+  // }, [dispatch]);
+
   return (
     <Div>
       <GlobalStyle />
@@ -18,6 +26,7 @@ function App() {
           <Route path="/products/:id" element={<ProductDetailsPage />} />
         </Routes>
         <Footer />
+        <button onClick={() => dispatch(emptyCart())}>Click me</button>
       </Router>
     </Div>
   );
