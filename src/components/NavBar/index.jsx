@@ -18,7 +18,8 @@ import {
   Span,
   CartButton,
 } from "./NavBar.js";
-import ReactModal from "react-modal";
+import CartStoreModal from "../CartStoreModal";
+import { useDispatch } from "react-redux";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -32,6 +33,8 @@ const Navbar = () => {
 
   const cartProducts = useSelector((state) => state.cart.Cart);
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
     console.log(cartProducts);
     setCartState(() => cartProducts);
@@ -42,10 +45,6 @@ const Navbar = () => {
 
   const handleModalOpen = () => {
     setIsOpen(() => !isOpen);
-  };
-
-  const handleModalClose = () => {
-    setIsOpen(false);
   };
 
   return (
@@ -73,13 +72,11 @@ const Navbar = () => {
           <Span>{cartState && cartProducts.length}</Span>
         </NavCart>
       </NavItems>
-      <ReactModal
+      <CartStoreModal
         isOpen={isOpen}
-        onRequestClose={handleModalClose}
-        shouldCloseOnOverlayClick={true}
-      >
-        This is a Modal
-      </ReactModal>
+        setIsOpen={setIsOpen}
+        dispatch={dispatch}
+      />
     </NavContainer>
   );
 };

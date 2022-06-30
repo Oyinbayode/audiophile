@@ -9,6 +9,7 @@ const Button = (props) => {
         onClick={props.onClick}
         transparent={props.transparent}
         black={props.black}
+        checkout={props.checkout}
       >
         {props.children}
       </DefaultButton>
@@ -62,6 +63,13 @@ const DefaultButton = styled.button`
         background: black;
         color: white;
       }
+    `}
+
+   ${(props) =>
+    props.checkout &&
+    css`
+      max-width: 100%;
+      margin-bottom: 32px;
     `}
 `;
 
