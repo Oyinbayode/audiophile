@@ -4,29 +4,39 @@ import styled from "styled-components/macro";
 import { useSelector, useDispatch } from "react-redux";
 import { FormatCurrency } from "../utilities/FormatCurrency";
 import Button from "../utilities/Button";
-import { emptyCart } from "../redux/slices/cartSlice";
+import {
+  emptyCart,
+  increaseQuantity,
+  decreaseQuantity,
+} from "../redux/slices/cartSlice";
 
-const CartStoreModal = ({ isOpen, setIsOpen, dispatch }) => {
+const CartStoreModal = ({ isOpen, setIsOpen }) => {
   const handleModalClose = () => {
     setIsOpen(false);
   };
 
   const CartState = useSelector((state) => state.cart);
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
     Modal.setAppElement("body");
   });
 
-  //   useEffect(() => {
-  //     dispatch(emptyCart());
-  //   }, [dispatch]);
-
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [isOpen]);
   console.log(CartState);
   return (
     <Modal
       isOpen={isOpen}
       onRequestClose={handleModalClose}
       shouldCloseOnOverlayClick={true}
+      preventScroll={true}
       style={{
         overlay: {
           background: "rgba(0, 0, 0, 0.6)",
@@ -58,9 +68,31 @@ const CartStoreModal = ({ isOpen, setIsOpen, dispatch }) => {
                   <CartItemPrice>{FormatCurrency(item.price)}</CartItemPrice>
                 </CartItemInfo>
                 <Quantity>
-                  <Btn>-</Btn>
+                  <Btn
+                    onClick={() => {
+                      dispatch(
+                        decreaseQuantity({
+                          id: item.id,
+                          quantity: item.quantity,
+                        })
+                      );
+                    }}
+                  >
+                    -
+                  </Btn>
                   <QtyParagraph>{item.quantity}</QtyParagraph>
-                  <Btn>+</Btn>
+                  <Btn
+                    onClick={() => {
+                      dispatch(
+                        increaseQuantity({
+                          id: item.id,
+                          quantity: item.quantity,
+                        })
+                      );
+                    }}
+                  >
+                    +
+                  </Btn>
                 </Quantity>
               </CartItem>
             ))}
@@ -82,7 +114,7 @@ const CartStoreModal = ({ isOpen, setIsOpen, dispatch }) => {
 
 const Modal = styled(ReactModal)`
   position: absolute;
-  width: 420px;
+  width: 377px;
   background-color: #fff;
   min-height: fit-content;
   top: 8rem;
@@ -91,12 +123,22 @@ const Modal = styled(ReactModal)`
   display: flex;
   justify-content: center;
   border-radius: 8px;
+
+  @media screen and (max-width: 1090px) {
+    top: 5rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 327px;
+  }
 `;
 
 const CartContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 313px;
+  max-width: 271px;
   width: 100%;
   height: 100%;
 `;
@@ -117,6 +159,10 @@ const H2 = styled.h2`
   line-height: 1.563rem;
   letter-spacing: 1.28571px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.938rem;
+  }
 `;
 
 const RemoveAllButton = styled.button`
@@ -128,6 +174,12 @@ const RemoveAllButton = styled.button`
   line-height: 25px;
   color: #000;
   opacity: 0.5;
+  transition: color ease-in-out 0.3s, opacity ease-in-out 0.3s;
+
+  &:hover {
+    color: #d87d4a;
+    opacity: 1;
+  }
 `;
 
 const CartList = styled.ul`
@@ -136,8 +188,8 @@ const CartList = styled.ul`
 
   width: 100%;
   list-style-type: none;
-  margin-block: 0px;
-  padding-inline: 0px;
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
 `;
 
 const CartItem = styled.li`

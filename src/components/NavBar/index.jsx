@@ -19,7 +19,6 @@ import {
   CartButton,
 } from "./NavBar.js";
 import CartStoreModal from "../CartStoreModal";
-import { useDispatch } from "react-redux";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -32,8 +31,6 @@ const Navbar = () => {
   const [cartState, setCartState] = useState(null);
 
   const cartProducts = useSelector((state) => state.cart.Cart);
-
-  const dispatch = useDispatch();
 
   useEffect(() => {
     console.log(cartProducts);
@@ -72,11 +69,7 @@ const Navbar = () => {
           <Span>{cartState && cartProducts.length}</Span>
         </NavCart>
       </NavItems>
-      <CartStoreModal
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        dispatch={dispatch}
-      />
+      <CartStoreModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </NavContainer>
   );
 };
