@@ -20,8 +20,6 @@ const ProductDetailsPage = () => {
       ? Products.find((item) => item.id === Number(Params.id))
       : null;
 
-  console.log(Product, Params);
-
   const [size, setSize] = useState(window.innerWidth);
 
   window.addEventListener("resize", () => {

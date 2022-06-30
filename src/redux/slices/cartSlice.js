@@ -31,14 +31,28 @@ export const cartSlice = createSlice({
       },
     },
 
-    // setCart: {
-    //   reducer(state) {
-    //     const Cart = state.Cart;
-    //   },
-    // },
+    increaseQuantity: {
+      reducer(state, action) {
+        const item = state.Cart.find((item) => item.id === action.payload.id);
+        item.quantity++;
+        state.TotalPrice += item.price;
+      },
+    },
+    decreaseQuantity: {
+      reducer(state, action) {
+        const item = state.Cart.find((item) => item.id === action.payload.id);
+        if (item.quantity > 1) {
+          item.quantity--;
+          state.TotalPrice -= item.price;
+        } else {
+          item.quantity = 1;
+        }
+      },
+    },
   },
 });
 
-export const { addProduct, emptyCart } = cartSlice.actions;
+export const { addProduct, emptyCart, increaseQuantity, decreaseQuantity } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;

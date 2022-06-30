@@ -5,11 +5,11 @@ import styled from "styled-components";
 import GlobalStyle from "./globalStyles";
 import { HomePage, CategoryPage, ProductDetailsPage } from "./pages";
 import { Footer, NavBar } from "./components";
-import { useDispatch } from "react-redux";
-import { emptyCart } from "./redux/slices/cartSlice";
+// import { useDispatch } from "react-redux";
+// import { emptyCart } from "./redux/slices/cartSlice";
 
 function App() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   // useEffect(() => {
   //   dispatch(emptyCart);
@@ -26,7 +26,7 @@ function App() {
           <Route path="/products/:id" element={<ProductDetailsPage />} />
         </Routes>
         <Footer />
-        <button onClick={() => dispatch(emptyCart())}>Click me</button>
+        {/* <button onClick={() => dispatch(emptyCart())}>Click me</button> */}
       </Router>
     </Div>
   );

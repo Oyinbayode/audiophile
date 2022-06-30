@@ -5,7 +5,7 @@
       "new": true,
       "imgStart": true,
       "name": "XX99 MARK II Headphones",
-      "slugName": "xx99-mark-ii",
+      "slugName": "xx99 mk ii",
       "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
       "price": 2999,
       "images": {
@@ -100,7 +100,7 @@
       "new": false,
       "imgStart": false,
       "name": "XX99 MARK I Headphones",
-      "slugName": "xx99-mark-i",
+      "slugName": "xx99 mk i",
       "description": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go. ",
       "price": 1750,
       "images": {

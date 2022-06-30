@@ -18,6 +18,7 @@ import { useDispatch } from "react-redux";
 import { addProduct } from "../../../../redux/slices/cartSlice";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FormatCurrency } from "../../../../utilities/FormatCurrency";
 
 const Card = ({ src, alt, name, description, price, New, Product }) => {
   const [quantity, setQuantity] = useState(1);
@@ -34,14 +35,6 @@ const Card = ({ src, alt, name, description, price, New, Product }) => {
     }
   };
 
-  const FormatCurrency = (number) => {
-    return new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "USD",
-      maximumSignificantDigits: Math.trunc(Math.abs(number)).toFixed().length,
-    }).format(number);
-  };
-
   const dispatch = useDispatch();
 
   const AddToCart = () => {
@@ -50,6 +43,8 @@ const Card = ({ src, alt, name, description, price, New, Product }) => {
       name: Product.name,
       price: Product.price,
       quantity: quantity,
+      image: Product.images,
+      slugName: Product.slugName,
     };
 
     dispatch(addProduct(ProductCart));
