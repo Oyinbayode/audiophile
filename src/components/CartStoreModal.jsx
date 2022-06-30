@@ -30,7 +30,7 @@ const CartStoreModal = ({ isOpen, setIsOpen }) => {
       document.body.style.overflow = "";
     }
   }, [isOpen]);
-  console.log(CartState);
+
   return (
     <Modal
       isOpen={isOpen}

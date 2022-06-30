@@ -31,8 +31,6 @@ const CategoryPage = () => {
         })
       : "loading...";
 
-  console.log(CategoryData);
-
   // State
   const [size, setSize] = useState(window.innerWidth);
 

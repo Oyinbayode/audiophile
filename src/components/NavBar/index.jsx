@@ -25,7 +25,6 @@ const Navbar = () => {
 
   const handleClick = () => {
     setClicked((prev) => !prev);
-    console.log(clicked);
   };
 
   const [cartState, setCartState] = useState(null);
@@ -33,7 +32,6 @@ const Navbar = () => {
   const cartProducts = useSelector((state) => state.cart.Cart);
 
   useEffect(() => {
-    console.log(cartProducts);
     setCartState(() => cartProducts);
   }, [cartProducts]);
 
