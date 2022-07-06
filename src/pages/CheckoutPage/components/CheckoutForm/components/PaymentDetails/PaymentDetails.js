@@ -98,3 +98,59 @@ export const PaymentDetailsForm = styled.div`
   justify-content: space-between;
   align-items: flex-start;
 `;
+
+// export const RadioFormDiv = styled.div``;
+
+export const EMoneyForm = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  margin-top: 24px;
+`;
+
+export const ENumber = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-basis: 309px;
+  flex-grow: 1;
+`;
+
+export const EPin = styled(ENumber)`
+  margin-left: 16px;
+`;
+
+export const LabelText = styled.label`
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+  margin: 0;
+  margin-bottom: 9px;
+`;
+
+export const InputText = styled.input`
+  padding-left: 24px;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+  caret-color: #d87d4a;
+
+  &:focus {
+    outline: none;
+    border-color: #d87d4a;
+  }
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.25px;
+    color: black;
+    opacity: 0.4;
+  }
+`;

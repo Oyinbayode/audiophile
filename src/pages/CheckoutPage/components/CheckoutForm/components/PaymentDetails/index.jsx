@@ -10,6 +10,12 @@ import {
   Input,
   Label,
   PaymentDetailsForm,
+  RadioFormDiv,
+  EMoneyForm,
+  ENumber,
+  EPin,
+  InputText,
+  LabelText,
 } from "./PaymentDetails";
 
 const PaymentDetails = ({ register, watch }) => {
@@ -65,13 +71,27 @@ const PaymentDetails = ({ register, watch }) => {
           </Cash>
         </Two>
       </PaymentDetailsForm>
-      <p>
-        {state === "e-Money"
-          ? "e-Money"
-          : state === "Cash on Delivery"
-          ? "Cash on Delivery"
-          : ""}
-      </p>
+
+      {state === "e-Money" ? (
+        <EMoneyForm>
+          <ENumber>
+            <LabelText htmlFor="e-number">e-Money Number</LabelText>
+            <InputText
+              type="text"
+              placeholder="238521993"
+              {...register("ENumber")}
+            />
+          </ENumber>
+          <EPin>
+            <LabelText htmlFor="e-pin">e-Money PIN</LabelText>
+            <InputText type="text" placeholder="6891" {...register("EPin")} />
+          </EPin>
+        </EMoneyForm>
+      ) : state === "Cash on Delivery" ? (
+        "Cash on Delivery"
+      ) : (
+        ""
+      )}
     </Div>
   );
 };
