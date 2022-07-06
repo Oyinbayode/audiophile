@@ -1,44 +1,13 @@
 import React from "react";
-import {
-  Label,
-  Input,
-  Div,
-  H2,
-  One,
-  Name,
-  Email,
-  PhoneNumber,
-  Two,
-} from "./CheckoutForm";
+import { BillingDetails, ShippingDetails, PaymentDetails } from "./components";
+import { Div } from "./CheckoutForm";
 
-const CheckoutForm = ({ register }) => {
+const CheckoutForm = ({ register, watch }) => {
   return (
     <Div>
-      <H2>Billing Details</H2>
-      <One>
-        <Name>
-          <Label htmlFor="name">Name</Label>
-          <Input type="text" placeholder="Alexei Ward" {...register("Name")} />
-        </Name>
-        <Email>
-          <Label htmlFor="email">Email Address</Label>
-          <Input
-            type="email"
-            placeholder="alexei@mail.com"
-            {...register("Email")}
-          />
-        </Email>
-      </One>
-      <Two>
-        <PhoneNumber>
-          <Label htmlFor="phone">Phone Number</Label>
-          <Input
-            type="text"
-            placeholder="+1 (202) 555-0163"
-            {...register("PhoneNumber")}
-          />
-        </PhoneNumber>
-      </Two>
+      <BillingDetails register={register} />
+      <ShippingDetails register={register} />
+      <PaymentDetails register={register} watch={watch} />
     </Div>
   );
 };
