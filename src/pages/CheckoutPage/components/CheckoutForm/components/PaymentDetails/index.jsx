@@ -10,13 +10,17 @@ import {
   Input,
   Label,
   PaymentDetailsForm,
-  RadioFormDiv,
   EMoneyForm,
   ENumber,
   EPin,
   InputText,
   LabelText,
+  Delivery,
+  DeliveryImage,
+  DeliveryImg,
+  DeliveryParagraph,
 } from "./PaymentDetails";
+import DeliveryImageSVG from "./assets/images/Delivery.svg";
 
 const PaymentDetails = ({ register, watch }) => {
   const [state, setState] = useState("");
@@ -88,7 +92,16 @@ const PaymentDetails = ({ register, watch }) => {
           </EPin>
         </EMoneyForm>
       ) : state === "Cash on Delivery" ? (
-        "Cash on Delivery"
+        <Delivery>
+          <DeliveryImage>
+            <DeliveryImg src={DeliveryImageSVG} alt="" />
+          </DeliveryImage>
+          <DeliveryParagraph>
+            The ‘Cash on Delivery’ option enables you to pay in cash when our
+            delivery courier arrives at your residence. Just make sure your
+            address is correct so that your order will not be cancelled.
+          </DeliveryParagraph>
+        </Delivery>
       ) : (
         ""
       )}

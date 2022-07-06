@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components/macro";
 import { CheckoutForm, CheckoutSummary } from "./components";
 import { useForm } from "react-hook-form";
+import GoBack from "../../components/GoBack";
 
 const CheckoutPage = () => {
   const { register, handleSubmit, watch, errors } = useForm();
@@ -11,6 +12,11 @@ const CheckoutPage = () => {
 
   return (
     <Div>
+      <GoBack
+        style={{
+          marginLeft: "200px",
+        }}
+      />
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Left>
           <H1>Checkout</H1>
@@ -28,7 +34,8 @@ const Div = styled.div`
   background-color: #f1f1f1;
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const H1 = styled.h1`
@@ -49,6 +56,7 @@ const Form = styled.form`
   display: grid;
   grid-template-columns: 1fr 350px;
   grid-gap: 30px;
+  margin-top: 37px;
 `;
 
 const Left = styled.div`

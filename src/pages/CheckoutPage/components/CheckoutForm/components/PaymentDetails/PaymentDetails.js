@@ -154,3 +154,33 @@ export const InputText = styled.input`
     opacity: 0.4;
   }
 `;
+
+export const Delivery = styled.div`
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid Black;
+  margin-top: 35px;
+  align-items: center;
+`;
+
+export const DeliveryImage = styled.div`
+  max-width: fit-content;
+  width: 100%;
+`;
+
+export const DeliveryImg = styled.img`
+  width: 100%;
+`;
+
+export const DeliveryText = styled.div``;
+
+export const DeliveryParagraph = styled.p`
+  margin: 0;
+  max-width: 554px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+`;
