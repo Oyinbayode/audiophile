@@ -1,14 +1,6 @@
 import styled from "styled-components/macro";
 
-export const SummaryContainer = styled.div`
-  background-color: #fff;
-  padding: 33px;
-  display: flex;
-  flex-direction: column;
-  max-width: 350px;
-  width: 100%;
-  border-radius: 8px;
-`;
+export const SummaryContainer = styled.div``;
 
 export const SummaryHeader = styled.h2`
   margin: 0;

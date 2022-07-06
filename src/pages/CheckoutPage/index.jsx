@@ -14,7 +14,8 @@ const CheckoutPage = () => {
     <Div>
       <GoBack
         style={{
-          marginLeft: "200px",
+          marginLeft: "11.45%",
+          marginTop: "79px",
         }}
       />
       <Form onSubmit={handleSubmit(onSubmit)}>
@@ -53,10 +54,15 @@ const Form = styled.form`
   max-width: 1110px;
   width: 100%;
   border: 1px solid black;
-  display: grid;
-  grid-template-columns: 1fr 350px;
-  grid-gap: 30px;
+
+  display: flex;
+  justify-content: space-between;
   margin-top: 37px;
+
+  @media screen and (max-width: 1090px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Left = styled.div`
@@ -64,10 +70,29 @@ const Left = styled.div`
   padding: 48px;
   display: flex;
   flex-direction: column;
-  /* max-width: 730px;
-  width: 100%; */
+  max-width: 643px;
+  width: 100%;
+
+  @media screen and (max-width: 1090px) {
+    margin-bottom: 32px;
+    max-width: 689px;
+  }
 `;
 
-const Right = styled.div``;
+const Right = styled.div`
+  background-color: #fff;
+  padding: 33px;
+  display: flex;
+  flex-direction: column;
+  max-width: 284px;
+  width: 100%;
+  border-radius: 8px;
+  height: fit-content;
+  margin-left: 16px;
+
+  @media screen and (max-width: 1090px) {
+    max-width: 689px;
+  }
+`;
 
 export default CheckoutPage;
