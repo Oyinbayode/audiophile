@@ -1,5 +1,8 @@
 import React from "react";
 import {
+  PhoneInput,
+  Error,
+  LabelDiv,
   Label,
   Input,
   Div,
@@ -11,20 +14,37 @@ import {
   Two,
 } from "./BillingDetails";
 
-const BillingDetails = ({ register, errors }) => {
+const BillingDetails = ({ register, errors, control }) => {
   return (
     <Div>
       <H2>Billing Details</H2>
       <One>
         <Name>
-          {errors.Name && <Label>Name is required</Label>}
-          <Label htmlFor="name">Name</Label>
-          <Input type="text" placeholder="Alexei Ward" {...register("Name")} />
+          <LabelDiv>
+            <Label style={errors.Name && { color: "#CD2C2C" }} htmlFor="name">
+              Name
+            </Label>
+            {errors.Name && <Error>{errors.Name.message}</Error>}
+          </LabelDiv>
+
+          <Input
+            style={errors.Name && { border: "1.5px solid #CD2C2C" }}
+            type="text"
+            placeholder="Alexei Ward"
+            {...register("Name")}
+          />
         </Name>
         <Email>
-          <Label htmlFor="email">Email Address</Label>
+          <LabelDiv>
+            <Label style={errors.Email && { color: "#CD2C2C" }} htmlFor="email">
+              Email Address
+            </Label>
+            {errors.Email && <Error>{errors.Email.message}</Error>}
+          </LabelDiv>
+
           <Input
             type="email"
+            style={errors.Email && { border: "1.5px solid #CD2C2C" }}
             placeholder="alexei@mail.com"
             {...register("Email")}
           />
@@ -32,11 +52,24 @@ const BillingDetails = ({ register, errors }) => {
       </One>
       <Two>
         <PhoneNumber>
-          <Label htmlFor="phone">Phone Number</Label>
-          <Input
+          <LabelDiv>
+            <Label
+              style={errors.PhoneNumber && { color: "#CD2C2C" }}
+              htmlFor="phone"
+            >
+              Phone Number
+            </Label>
+            {errors.PhoneNumber && <Error>{errors.PhoneNumber.message}</Error>}
+          </LabelDiv>
+
+          <PhoneInput
+            style={errors.PhoneNumber && { border: "1.5px solid #CD2C2C" }}
             type="text"
+            control={control}
             placeholder="+1 (202) 555-0163"
             {...register("PhoneNumber")}
+            international
+            withCountryCallingCode
           />
         </PhoneNumber>
       </Two>

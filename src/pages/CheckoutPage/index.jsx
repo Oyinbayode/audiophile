@@ -8,9 +8,16 @@ import GoBack from "../../components/GoBack";
 
 const schema = yup.object({
   Name: yup.string().required("Name is required"),
-  // Email: yup.string().required("Email is required"),
-  // PhoneNumber: yup.string().required("Phone is required"),
-  // Address: yup.string().required("Address is required"),
+  Email: yup
+    .string()
+    .required("Email is required")
+    .matches(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Email not valid!"),
+  PhoneNumber: yup
+    .string()
+    .required("Phone Number required")
+    .max(15)
+    .nullable(),
+  Address: yup.string().required("Address is required"),
   // City: yup.string().required("City is required"),
   // Country: yup.string().required("Country is required"),
   // Zip: yup.string().required("Zip is required"),
@@ -22,9 +29,11 @@ const CheckoutPage = () => {
     handleSubmit,
     watch,
     getValues,
+    control,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
+    mode: "onBlur",
   });
   const onSubmit = (data) => {
     console.log(data);
@@ -56,6 +65,7 @@ const CheckoutPage = () => {
             register={register}
             watch={watch}
             errors={errors}
+            control={control}
             getValues={getValues}
           />
         </Left>

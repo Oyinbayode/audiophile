@@ -22,7 +22,7 @@ import {
 } from "./PaymentDetails";
 import DeliveryImageSVG from "./assets/images/Delivery.svg";
 
-const PaymentDetails = ({ register, getValues }) => {
+const PaymentDetails = ({ register, getValues, watch }) => {
   const [state, setState] = useState("");
 
   return (
@@ -35,7 +35,7 @@ const PaymentDetails = ({ register, getValues }) => {
         <Two>
           <EMoney
             style={
-              getValues("PaymentMethod") === "EMoney"
+              watch("PaymentMethod") === "EMoney"
                 ? { border: "1.5px solid #d87d4a" }
                 : { border: "1px solid #cfcfcf" }
             }
@@ -54,7 +54,7 @@ const PaymentDetails = ({ register, getValues }) => {
           </EMoney>
           <Cash
             style={
-              getValues("PaymentMethod") === "Cash"
+              watch("PaymentMethod") === "Cash"
                 ? { border: "1.5px solid #d87d4a" }
                 : { border: "1px solid #cfcfcf" }
             }
@@ -74,7 +74,7 @@ const PaymentDetails = ({ register, getValues }) => {
         </Two>
       </PaymentDetailsForm>
 
-      {state === "e-Money" ? (
+      {getValues("PaymentMethod") === "EMoney" ? (
         <EMoneyForm>
           <ENumber>
             <LabelText htmlFor="e-number">e-Money Number</LabelText>
@@ -89,7 +89,7 @@ const PaymentDetails = ({ register, getValues }) => {
             <InputText type="text" placeholder="6891" {...register("EPin")} />
           </EPin>
         </EMoneyForm>
-      ) : state === "Cash on Delivery" ? (
+      ) : getValues("PaymentMethod") === "Cash" ? (
         <Delivery>
           <DeliveryImage>
             <DeliveryImg src={DeliveryImageSVG} alt="" />
