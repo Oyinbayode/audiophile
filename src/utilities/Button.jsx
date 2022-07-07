@@ -10,6 +10,7 @@ const Button = (props) => {
         transparent={props.transparent}
         black={props.black}
         checkout={props.checkout}
+        type={props.type ? "submit" : "button"}
       >
         {props.children}
       </DefaultButton>

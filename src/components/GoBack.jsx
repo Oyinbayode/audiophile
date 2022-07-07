@@ -2,10 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components/macro";
 
-const GoBack = () => {
+const GoBack = ({ style }) => {
   const Navigate = useNavigate();
 
-  return <Back onClick={() => Navigate(-1)}>Go Back</Back>;
+  return (
+    <Back style={style} onClick={() => Navigate(-1)}>
+      Go Back
+    </Back>
+  );
 };
 
 const Back = styled.button`
