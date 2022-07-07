@@ -22,7 +22,7 @@ import {
 } from "./PaymentDetails";
 import DeliveryImageSVG from "./assets/images/Delivery.svg";
 
-const PaymentDetails = ({ register, watch }) => {
+const PaymentDetails = ({ register, getValues }) => {
   const [state, setState] = useState("");
 
   return (
@@ -35,40 +35,38 @@ const PaymentDetails = ({ register, watch }) => {
         <Two>
           <EMoney
             style={
-              state === "e-Money"
+              getValues("PaymentMethod") === "EMoney"
                 ? { border: "1.5px solid #d87d4a" }
                 : { border: "1px solid #cfcfcf" }
             }
           >
-            <Label htmlFor="e-money">
+            <Label htmlFor="EMoney">
               <Input
                 type="radio"
-                name="EMoney"
-                id="Emoney"
-                {...register("EMoney")}
-                value={state === "e-Money" ? "e-Money" : null}
-                checked={state === "e-Money"}
-                onChange={() => setState("e-Money")}
+                {...register("PaymentMethod")}
+                id="EMoney"
+                value="EMoney"
+                defaultChecked={getValues("PaymentMethod") === "EMoney"}
+                // onChange={() => setState("e-Money")}
               />{" "}
               e-Money
             </Label>
           </EMoney>
           <Cash
             style={
-              state === "Cash on Delivery"
+              getValues("PaymentMethod") === "Cash"
                 ? { border: "1.5px solid #d87d4a" }
                 : { border: "1px solid #cfcfcf" }
             }
           >
-            <Label htmlFor="cash">
+            <Label htmlFor="Cash">
               <Input
                 type="radio"
-                name="Cash"
+                {...register("PaymentMethod")}
                 id="Cash"
-                {...register("Cash")}
-                value={state === "Cash on Delivery" ? "Cash on Delivery" : null}
-                checked={state === "Cash on Delivery"}
-                onChange={() => setState("Cash on Delivery")}
+                value="Cash"
+                defaultChecked={getValues("PaymentMethod") === "Cash"}
+                // onChange={() => setState("Cash on Delivery")}
               />
               Cash on Delivery
             </Label>

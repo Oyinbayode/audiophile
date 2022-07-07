@@ -2,12 +2,33 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components/macro";
 import { CheckoutForm, CheckoutSummary } from "./components";
 import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import GoBack from "../../components/GoBack";
 
+const schema = yup.object({
+  Name: yup.string().required("Name is required"),
+  // Email: yup.string().required("Email is required"),
+  // PhoneNumber: yup.string().required("Phone is required"),
+  // Address: yup.string().required("Address is required"),
+  // City: yup.string().required("City is required"),
+  // Country: yup.string().required("Country is required"),
+  // Zip: yup.string().required("Zip is required"),
+});
+
 const CheckoutPage = () => {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    getValues,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
   const onSubmit = (data) => {
     console.log(data);
+    // console.log(errors);
   };
 
   const [size, setSize] = useState(window.innerWidth);
@@ -31,7 +52,12 @@ const CheckoutPage = () => {
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Left>
           <H1>Checkout</H1>
-          <CheckoutForm register={register} watch={watch} />
+          <CheckoutForm
+            register={register}
+            watch={watch}
+            errors={errors}
+            getValues={getValues}
+          />
         </Left>
         <Right>
           <CheckoutSummary />

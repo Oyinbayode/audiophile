@@ -123,3 +123,23 @@ export const GrandTotalText = styled(SummaryTotalText)``;
 export const GrandTotalPrice = styled(SummaryTotalPrice)`
   color: #d87d4a;
 `;
+
+export const SummaryButton = styled.input`
+  background: #d87d4a;
+  border: none;
+  color: #fff;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 18px;
+  padding: 15px 29px 15px 29px;
+  width: 100%;
+  transition: background ease-in-out 0.3s;
+
+  &:hover {
+    background: #fbaf85;
+    cursor: pointer;
+  }
+`;

@@ -22,10 +22,10 @@ import {
   GrandTotal,
   GrandTotalText,
   GrandTotalPrice,
+  SummaryButton,
 } from "./Summary";
 import { useSelector } from "react-redux/es/exports";
 import { FormatCurrency } from "../../../../utilities/FormatCurrency";
-import Button from "../../../../utilities/Button";
 
 const CheckoutSummary = () => {
   const CartState = useSelector((state) => state.cart);
@@ -67,9 +67,7 @@ const CheckoutSummary = () => {
           {FormatCurrency(CartState.TotalPrice + 50)}
         </GrandTotalPrice>
       </GrandTotal>
-      <Button checkout to="#">
-        Continue
-      </Button>
+      <SummaryButton type="submit" />
     </SummaryContainer>
   );
 };
