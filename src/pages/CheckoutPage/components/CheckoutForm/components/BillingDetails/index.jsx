@@ -14,7 +14,7 @@ import {
   Two,
 } from "./BillingDetails";
 
-const BillingDetails = ({ register, errors, control }) => {
+const BillingDetails = ({ register, errors }) => {
   return (
     <Div>
       <H2>Billing Details</H2>
@@ -64,12 +64,10 @@ const BillingDetails = ({ register, errors, control }) => {
 
           <PhoneInput
             style={errors.PhoneNumber && { border: "1.5px solid #CD2C2C" }}
-            type="text"
-            control={control}
+            type="tel"
+            pattern="^[0-9]{3,45}$"
             placeholder="+1 (202) 555-0163"
             {...register("PhoneNumber")}
-            international
-            withCountryCallingCode
           />
         </PhoneNumber>
       </Two>

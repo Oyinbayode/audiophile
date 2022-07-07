@@ -14,13 +14,27 @@ const schema = yup.object({
     .matches(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Email not valid!"),
   PhoneNumber: yup
     .string()
-    .required("Phone Number required")
-    .max(15)
-    .nullable(),
+    .required("Phone Number is required")
+    .matches(
+      /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/g,
+      "Phone Number not valid!"
+    )
+    .max(15, "Max of 15 digits"),
   Address: yup.string().required("Address is required"),
-  // City: yup.string().required("City is required"),
-  // Country: yup.string().required("Country is required"),
-  // Zip: yup.string().required("Zip is required"),
+  City: yup.string().required("City is required"),
+  Country: yup.string().required("Country is required"),
+  Zip: yup.string().required("Zip is required"),
+  PaymentMethod: yup.string().required("Payment Method is required"),
+  ENumber: yup.string().when("PaymentMethod", (val, schema) => {
+    console.log("when", val);
+    if (val === "EMoney") return yup.string().required();
+    else return yup.string().notRequired();
+  }),
+  EPin: yup.string().when("PaymentMethod", (val, schema) => {
+    console.log("when", val);
+    if (val === "EMoney") return yup.string().required();
+    else return yup.string().notRequired();
+  }),
 });
 
 const CheckoutPage = () => {
@@ -31,12 +45,14 @@ const CheckoutPage = () => {
     getValues,
     control,
     formState: { errors },
+    reset,
   } = useForm({
     resolver: yupResolver(schema),
-    mode: "onBlur",
+    mode: "onChange",
   });
   const onSubmit = (data) => {
     console.log(data);
+    reset();
     // console.log(errors);
   };
 

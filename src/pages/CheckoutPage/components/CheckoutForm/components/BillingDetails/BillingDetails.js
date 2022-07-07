@@ -1,5 +1,4 @@
 import styled from "styled-components/macro";
-import ReactInput from "react-phone-number-input/react-hook-form-input";
 
 export const Div = styled.div`
   display: flex;
@@ -101,7 +100,7 @@ export const Input = styled.input`
   }
 `;
 
-export const PhoneInput = styled(ReactInput)`
+export const PhoneInput = styled.input`
   padding-left: 24px;
   padding-top: 18px;
   padding-bottom: 19px;

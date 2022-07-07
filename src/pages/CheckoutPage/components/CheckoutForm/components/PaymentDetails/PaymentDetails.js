@@ -23,6 +23,7 @@ export const H2 = styled.h2`
 
 export const One = styled.div`
   display: flex;
+  flex-direction: column;
 
   @media screen and (max-width: 600px) {
     margin-bottom: 17px;
@@ -154,7 +155,6 @@ export const LabelText = styled.label`
   line-height: 16px;
   letter-spacing: -0.214286px;
   margin: 0;
-  margin-bottom: 9px;
 `;
 
 export const InputText = styled.input`
@@ -217,4 +217,14 @@ export const DeliveryParagraph = styled.p`
     font-size: 13px;
     line-height: 20px;
   }
+`;
+
+export const LabelDiv = styled.div`
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const Error = styled(LabelText)`
+  color: #cd2c2c;
 `;

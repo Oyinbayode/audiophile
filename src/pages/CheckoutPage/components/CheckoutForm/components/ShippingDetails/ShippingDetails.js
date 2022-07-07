@@ -39,7 +39,6 @@ export const Label = styled.label`
   line-height: 16px;
   letter-spacing: -0.214286px;
   margin: 0;
-  margin-bottom: 9px;
 `;
 
 export const Input = styled.input`
@@ -111,3 +110,13 @@ export const Three = styled.div`
 `;
 
 export const Country = styled(Address)``;
+
+export const LabelDiv = styled.div`
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const Error = styled(Label)`
+  color: #cd2c2c;
+`;

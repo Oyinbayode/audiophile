@@ -19,10 +19,12 @@ import {
   DeliveryImage,
   DeliveryImg,
   DeliveryParagraph,
+  LabelDiv,
+  Error,
 } from "./PaymentDetails";
 import DeliveryImageSVG from "./assets/images/Delivery.svg";
 
-const PaymentDetails = ({ register, getValues, watch }) => {
+const PaymentDetails = ({ register, getValues, watch, errors }) => {
   const [state, setState] = useState("");
 
   return (
@@ -31,6 +33,15 @@ const PaymentDetails = ({ register, getValues, watch }) => {
       <PaymentDetailsForm>
         <One>
           <Paragraph>Payment Method</Paragraph>
+          {errors.PaymentMethod && (
+            <Error
+              style={{
+                marginTop: "16px",
+              }}
+            >
+              Payment Method Required
+            </Error>
+          )}
         </One>
         <Two>
           <EMoney
@@ -77,16 +88,48 @@ const PaymentDetails = ({ register, getValues, watch }) => {
       {getValues("PaymentMethod") === "EMoney" ? (
         <EMoneyForm>
           <ENumber>
-            <LabelText htmlFor="e-number">e-Money Number</LabelText>
+            <LabelDiv>
+              <LabelText
+                style={
+                  errors.ENumber && {
+                    color: "#CD2C2C",
+                  }
+                }
+                htmlFor="ENumber"
+              >
+                e-Money Number
+              </LabelText>
+              {errors.ENumber && <Error>{errors.ENumber.message}</Error>}
+            </LabelDiv>
+
             <InputText
               type="text"
               placeholder="238521993"
               {...register("ENumber")}
+              style={errors.ENumber && { border: "1.5px solid #CD2C2C" }}
             />
           </ENumber>
           <EPin>
-            <LabelText htmlFor="e-pin">e-Money PIN</LabelText>
-            <InputText type="text" placeholder="6891" {...register("EPin")} />
+            <LabelDiv>
+              <LabelText
+                style={
+                  errors.EPin && {
+                    color: "#CD2C2C",
+                  }
+                }
+                htmlFor="EPin"
+              >
+                e-Money PIN
+              </LabelText>
+              {errors.EPin && <Error>{errors.EPin.message}</Error>}
+            </LabelDiv>
+
+            <InputText
+              style={errors.EPin && { border: "1.5px solid #CD2C2C" }}
+              type="text"
+              placeholder="6891"
+              {...register("EPin")}
+            />
           </EPin>
         </EMoneyForm>
       ) : getValues("PaymentMethod") === "Cash" ? (
