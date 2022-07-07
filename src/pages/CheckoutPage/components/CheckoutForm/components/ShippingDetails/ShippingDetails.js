@@ -15,6 +15,10 @@ export const H2 = styled.h2`
   color: #d87d4a;
   margin-top: 53px;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 32px;
+  }
 `;
 
 export const One = styled.div`
@@ -54,24 +58,56 @@ export const Input = styled.input`
     outline: none;
     border-color: #d87d4a;
   }
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.25px;
+    color: black;
+    opacity: 0.4;
+  }
 `;
 
 export const Two = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: normal;
+    height: 186px;
+  }
 `;
 
 export const Zip = styled(Address)``;
 
 export const City = styled(Address)`
   margin-left: 16px;
+
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+    margin-top: 24px;
+  }
 `;
 
 export const Three = styled.div`
   margin-bottom: 24px;
   max-width: 309px;
   width: 100%;
+
+  @media screen and (max-width: 1090px) {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 49% auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+    margin-bottom: 32px;
+    display: block;
+  }
 `;
 
 export const Country = styled(Address)``;

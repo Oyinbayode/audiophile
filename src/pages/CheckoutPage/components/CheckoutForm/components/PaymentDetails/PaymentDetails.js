@@ -15,10 +15,18 @@ export const H2 = styled.h2`
   color: #d87d4a;
   margin-top: 61px;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 0;
+  }
 `;
 
 export const One = styled.div`
   display: flex;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 17px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -34,6 +42,10 @@ export const Two = styled.div`
   max-width: 309px;
   width: 100%;
   height: 128px;
+
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+  }
 `;
 
 export const EMoney = styled.div`
@@ -97,6 +109,10 @@ export const PaymentDetailsForm = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 // export const RadioFormDiv = styled.div``;
@@ -106,6 +122,11 @@ export const EMoneyForm = styled.div`
   justify-content: space-between;
   margin-bottom: 24px;
   margin-top: 24px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    height: 186px;
+  }
 `;
 
 export const ENumber = styled.div`
@@ -113,10 +134,18 @@ export const ENumber = styled.div`
   flex-direction: column;
   flex-basis: 309px;
   flex-grow: 1;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 16px;
+  }
 `;
 
 export const EPin = styled(ENumber)`
   margin-left: 16px;
+
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+  }
 `;
 
 export const LabelText = styled.label`
@@ -158,7 +187,6 @@ export const InputText = styled.input`
 export const Delivery = styled.div`
   display: flex;
   justify-content: space-between;
-  border: 1px solid Black;
   margin-top: 35px;
   align-items: center;
 `;
@@ -183,4 +211,10 @@ export const DeliveryParagraph = styled.p`
   line-height: 25px;
   mix-blend-mode: normal;
   opacity: 0.5;
+
+  @media screen and (max-width: 600px) {
+    max-width: 200px;
+    font-size: 13px;
+    line-height: 20px;
+  }
 `;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components/macro";
 import { CheckoutForm, CheckoutSummary } from "./components";
 import { useForm } from "react-hook-form";
@@ -10,14 +10,24 @@ const CheckoutPage = () => {
     console.log(data);
   };
 
+  const [size, setSize] = useState(window.innerWidth);
+
+  window.addEventListener("resize", () => {
+    setSize(() => window.innerWidth);
+  });
+
   return (
     <Div>
-      <GoBack
-        style={{
-          marginLeft: "11.45%",
-          marginTop: "79px",
-        }}
-      />
+      <section>
+        <GoBack
+          style={{
+            alignSelf: "flex-start",
+            marginLeft: "0",
+            marginTop: "0",
+          }}
+        />
+      </section>
+
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Left>
           <H1>Checkout</H1>
@@ -37,6 +47,24 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  section {
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    margin-top: 71px;
+
+    @media screen and (max-width: 1090px) {
+      width: calc(100% - 33%);
+      margin-top: 16px;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: calc(100% - 20%);
+    }
+  }
 `;
 
 const H1 = styled.h1`
@@ -48,20 +76,36 @@ const H1 = styled.h1`
   color: #000000;
   margin: 0;
   margin-bottom: 41px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+  }
 `;
 
 const Form = styled.form`
   max-width: 1110px;
   width: 100%;
-  border: 1px solid black;
-
   display: flex;
   justify-content: space-between;
   margin-top: 37px;
+  margin-bottom: 141px;
 
   @media screen and (max-width: 1090px) {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 116px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 689px;
+    margin-top: 12px;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 97px;
   }
 `;
 
@@ -72,10 +116,21 @@ const Left = styled.div`
   flex-direction: column;
   max-width: 643px;
   width: 100%;
+  border-radius: 8px;
 
   @media screen and (max-width: 1090px) {
     margin-bottom: 32px;
     max-width: 689px;
+    padding: 33px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 279px;
+    padding: 24px;
   }
 `;
 
@@ -92,6 +147,16 @@ const Right = styled.div`
 
   @media screen and (max-width: 1090px) {
     max-width: 689px;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 279px;
+    padding: 24px;
   }
 `;
 

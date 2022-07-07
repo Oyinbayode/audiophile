@@ -21,6 +21,12 @@ export const One = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: normal;
+    height: 186px;
+  }
 `;
 
 export const Name = styled.div`
@@ -32,13 +38,21 @@ export const Name = styled.div`
 
 export const Email = styled(Name)`
   margin-left: 1rem;
+
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+    margin-top: 24px;
+  }
 `;
 
 export const PhoneNumber = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 309px;
+
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+  }
 `;
 
 export const Label = styled.label`
@@ -79,4 +93,14 @@ export const Input = styled.input`
 
 export const Two = styled.div`
   display: flex;
+  max-width: 309px;
+
+  @media screen and (max-width: 1090px) {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 49% auto;
+  }
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
 `;
