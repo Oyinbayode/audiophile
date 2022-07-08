@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Div,
   H2,
@@ -25,8 +25,6 @@ import {
 import DeliveryImageSVG from "./assets/images/Delivery.svg";
 
 const PaymentDetails = ({ register, getValues, watch, errors }) => {
-  const [state, setState] = useState("");
-
   return (
     <Div>
       <H2>Payment Details</H2>

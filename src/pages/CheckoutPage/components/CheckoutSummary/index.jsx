@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   SummaryContainer,
   SummaryHeader,
@@ -26,9 +26,12 @@ import {
 } from "./Summary";
 import { useSelector } from "react-redux/es/exports";
 import { FormatCurrency } from "../../../../utilities/FormatCurrency";
+import CheckoutModal from "../../../../components/CheckoutModal";
 
-const CheckoutSummary = () => {
+const CheckoutSummary = ({ isOpen, setIsOpen }) => {
   const CartState = useSelector((state) => state.cart);
+
+  // Modal
 
   return (
     <SummaryContainer>
@@ -67,7 +70,8 @@ const CheckoutSummary = () => {
           {FormatCurrency(CartState.TotalPrice + 50)}
         </GrandTotalPrice>
       </GrandTotal>
-      <SummaryButton type="submit" />
+      <SummaryButton type="submit">Continue and PAy</SummaryButton>
+      <CheckoutModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </SummaryContainer>
   );
 };
