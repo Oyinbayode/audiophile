@@ -17,10 +17,8 @@ import {
   Bars,
   Span,
   CartButton,
-  MobileNav,
 } from "./NavBar.js";
 import CartStoreModal from "../CartStoreModal";
-import ShopNow from "../ShopNow";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
