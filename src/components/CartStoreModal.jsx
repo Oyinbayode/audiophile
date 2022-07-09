@@ -101,7 +101,11 @@ const CartStoreModal = ({ isOpen, setIsOpen }) => {
             <TotalText>Total</TotalText>
             <TotalPrice>{FormatCurrency(CartState.TotalPrice)}</TotalPrice>
           </Total>
-          <Button checkout to="/checkout">
+          <Button
+            onClick={() => setIsOpen(() => false)}
+            checkout
+            to="/checkout"
+          >
             Checkout
           </Button>
         </CartContainer>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components/macro";
 import { CheckoutForm, CheckoutSummary } from "./components";
 import { useForm } from "react-hook-form";
@@ -16,7 +16,7 @@ const schema = yup.object({
     .string()
     .required("Phone Number is required")
     .matches(
-      /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/g,
+      /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/,
       "Phone Number not valid!"
     )
     .max(15, "Max of 15 digits"),
@@ -38,6 +38,9 @@ const schema = yup.object({
 });
 
 const CheckoutPage = () => {
+  // modal
+  const [isOpen, setIsOpen] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -53,14 +56,8 @@ const CheckoutPage = () => {
   const onSubmit = (data) => {
     console.log(data);
     reset();
-    // console.log(errors);
+    setIsOpen(() => true);
   };
-
-  const [size, setSize] = useState(window.innerWidth);
-
-  window.addEventListener("resize", () => {
-    setSize(() => window.innerWidth);
-  });
 
   return (
     <Div>
@@ -86,7 +83,7 @@ const CheckoutPage = () => {
           />
         </Left>
         <Right>
-          <CheckoutSummary />
+          <CheckoutSummary isOpen={isOpen} setIsOpen={setIsOpen} />
         </Right>
       </Form>
     </Div>

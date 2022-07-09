@@ -124,7 +124,7 @@ export const GrandTotalPrice = styled(SummaryTotalPrice)`
   color: #d87d4a;
 `;
 
-export const SummaryButton = styled.input`
+export const SummaryButton = styled.button`
   background: #d87d4a;
   border: none;
   color: #fff;

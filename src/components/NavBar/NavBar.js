@@ -55,13 +55,13 @@ export const NavTextItems = styled.ul`
   @media screen and (max-width: 770px) {
     max-width: 100vw;
     flex-direction: column;
-    margin-top: 83px;
+    margin-top: 4rem;
     align-items: center;
     left: -110%;
     opacity: 0.9;
     position: fixed;
     background: #fff;
-    height: 100vh;
+    height: 100%;
     justify-content: flex-start;
     top: 0;
     transition: all 0.5s ease-in-out;
@@ -92,6 +92,8 @@ export const NavItem = styled(Link)`
 
   @media screen and (max-width: 770px) {
     color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 `;
 
@@ -141,3 +143,17 @@ export const Hamburger = styled.div`
     margin-right: 42px;
   }
 `;
+
+// export const AddToBody = styled.
+
+// export const MobileNav = styled.div`
+//   background: #fff;
+//   position: absolute;
+//   top: 4rem;
+//   display: flex;
+//   z-index: 9999;
+
+//   width: 100%;
+//   left: 50%;
+//   transform: translateX(-50%);
+// `;

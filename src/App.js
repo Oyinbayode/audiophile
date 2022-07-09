@@ -17,12 +17,14 @@ function App() {
       <GlobalStyle />
       <Router>
         <NavBar />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/categories/:category" element={<CategoryPage />} />
           <Route path="/products/:id" element={<ProductDetailsPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
+
         <Footer />
       </Router>
     </Div>
