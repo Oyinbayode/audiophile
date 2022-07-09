@@ -15,7 +15,10 @@ const schema = yup.object({
   PhoneNumber: yup
     .string()
     .required("Phone Number is required")
-    // .matches(/^\+(?:[0-9] ?){6,14}[0-9]$/, "Phone Number not valid!")
+    .matches(
+      /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/,
+      "Phone Number not valid!"
+    )
     .max(15, "Max of 15 digits"),
   Address: yup.string().required("Address is required"),
   City: yup.string().required("City is required"),
