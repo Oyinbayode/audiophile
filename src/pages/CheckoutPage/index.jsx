@@ -152,6 +152,7 @@ const Form = styled.form`
 
   @media screen and (max-width: 600px) {
     margin-bottom: 97px;
+    width: 450px;
   }
 `;
 
