@@ -1,6 +1,11 @@
 import React from "react";
 import "normalize.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import styled from "styled-components";
 import GlobalStyle from "./globalStyles";
 import {
@@ -17,12 +22,14 @@ function App() {
       <GlobalStyle />
       <Router>
         <NavBar />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/categories/:category" element={<CategoryPage />} />
           <Route path="/products/:id" element={<ProductDetailsPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
+
         <Footer />
       </Router>
     </Div>
