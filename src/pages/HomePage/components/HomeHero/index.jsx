@@ -10,7 +10,7 @@ import {
   HeroRight,
   HeroHeadphoneImage,
 } from "./HomeHero";
-import XX91 from "./assets/images/XX91.svg";
+import XX91 from "./assets/images/XX91.png";
 import XX91Mobile from "./assets/images/XX91-mobile-img.svg";
 // import XX91Tablet from "./assets/images/XX91-tablet-img.svg";
 import Button from "../../../../utilities/Button";

@@ -26,12 +26,10 @@ const schema = yup.object({
   Zip: yup.string().required("Zip is required"),
   PaymentMethod: yup.string().required("Payment Method is required"),
   ENumber: yup.string().when("PaymentMethod", (val, schema) => {
-    console.log("when", val);
     if (val === "EMoney") return yup.string().required();
     else return yup.string().notRequired();
   }),
   EPin: yup.string().when("PaymentMethod", (val, schema) => {
-    console.log("when", val);
     if (val === "EMoney") return yup.string().required();
     else return yup.string().notRequired();
   }),
@@ -54,7 +52,6 @@ const CheckoutPage = () => {
     mode: "onChange",
   });
   const onSubmit = (data) => {
-    console.log(data);
     reset();
     setIsOpen(() => true);
   };
@@ -155,6 +152,7 @@ const Form = styled.form`
 
   @media screen and (max-width: 600px) {
     margin-bottom: 97px;
+    width: 450px;
   }
 `;
 
