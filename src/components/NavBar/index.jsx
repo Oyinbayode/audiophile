@@ -17,8 +17,10 @@ import {
   Bars,
   Span,
   CartButton,
+  MobileNav,
 } from "./NavBar.js";
 import CartStoreModal from "../CartStoreModal";
+import ShopNow from "../ShopNow";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -42,6 +44,14 @@ const Navbar = () => {
     setIsOpen(() => !isOpen);
   };
 
+  useEffect(() => {
+    if (clicked) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [clicked]);
+
   return (
     <NavContainer>
       <Hamburger onClick={handleClick}>
@@ -54,11 +64,27 @@ const Navbar = () => {
       </NavLogo>
       <NavItems>
         <NavTextItems className={clicked ? "active" : null}>
-          <NavItem to="/">Home</NavItem>
-          <NavItem to="/categories/Headphones">Headphones</NavItem>
-          <NavItem to="/categories/Speakers">Speakers</NavItem>
-          <NavItem to="/categories/Earphones">Earphones</NavItem>
+          <NavItem onClick={() => setClicked(false)} to="/">
+            Home
+          </NavItem>
+          <NavItem
+            onClick={() => setClicked(false)}
+            to="/categories/Headphones"
+          >
+            Headphones
+          </NavItem>
+          <NavItem onClick={() => setClicked(false)} to="/categories/Speakers">
+            Speakers
+          </NavItem>
+          <NavItem onClick={() => setClicked(false)} to="/categories/Earphones">
+            Earphones
+          </NavItem>
         </NavTextItems>
+        {/* {clicked ? (
+          <MobileNav>
+            <ShopNow />
+          </MobileNav>
+        ) : null} */}
         <NavCart>
           <CartButton onClick={handleModalOpen}>
             <Cart />
