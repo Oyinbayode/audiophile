@@ -1,11 +1,6 @@
 import React from "react";
 import "normalize.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import GlobalStyle from "./globalStyles";
 import {
